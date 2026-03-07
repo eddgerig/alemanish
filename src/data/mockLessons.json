@@ -1,0 +1,60 @@
+[
+    {
+        "type": "translation",
+        "questionPrefix": "¿Cómo se dice ",
+        "highlightedWord": "\"Hola\"",
+        "questionSuffix": "?",
+        "correctOptionId": "maitili",
+        "options": [
+            {
+                "id": "gutentag",
+                "title": "Guten Tag",
+                "subtitle": "Buen día",
+                "iconName": "sun"
+            },
+            {
+                "id": "maitili",
+                "title": "Maitili",
+                "subtitle": "Hola / Buen día",
+                "iconName": "hand"
+            },
+            {
+                "id": "danke",
+                "title": "Danke",
+                "subtitle": "Gracias",
+                "iconName": "heart"
+            }
+        ]
+    },
+    {
+        "type": "audioImage",
+        "instruction": "Escucha y selecciona la imagen correcta",
+        "audioUrl": "/audios/mutter.mp3",
+        "phoneticText": "'Mutter'",
+        "correctOptionId": "mutti",
+        "options": [
+            {
+                "id": "mutti",
+                "title": "Mutti",
+                "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Mutti"
+            },
+            {
+                "id": "vatti",
+                "title": "Vatti",
+                "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Vatti"
+            },
+            {
+                "id": "bruda",
+                "title": "Bruda",
+                "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Bruda"
+            }
+        ]
+    },
+    {
+        "type": "completeWord",
+        "imageUrl": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=500",
+        "audioUrl": "/audios/perro.mp3",
+        "targetWord": "PERRO",
+        "visibleCharacters": 1
+    }
+]
