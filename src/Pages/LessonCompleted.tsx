@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BoltIcon from '@mui/icons-material/Bolt';
-import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
-import FlagIcon from '@mui/icons-material/Flag';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Confetti from 'react-confetti';
 
 export const LessonCompleted: React.FC = () => {
     const navigate = useNavigate();
 
+    // Track window dimensions for the confetti
+    const [dimensions, setDimensions] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+
+    useEffect(() => {
+        const handleResize = () => setDimensions({ width: window.innerWidth, height: window.innerHeight });
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] flex flex-col font-sans relative overflow-hidden">
+            <Confetti
+                width={dimensions.width}
+                height={dimensions.height}
+                recycle={false}
+                numberOfPieces={300}
+                gravity={0.15}
+            />
+
             {/* Background elements simulating confetti/glow could go here */}
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-green-400 opacity-10 rounded-full blur-[80px] pointer-events-none"></div>
 
@@ -22,11 +40,11 @@ export const LessonCompleted: React.FC = () => {
                     <div className="absolute top-10 -right-6 w-4 h-2 bg-red-400 rotate-45"></div>
                     <div className="absolute bottom-10 -left-8 w-2 h-2 rounded-full bg-orange-400"></div>
 
-                    <div className="w-full h-full rounded-2xl overflow-hidden border-4 border-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] rotate-3">
+                    <div className="w-full h-full overflow-hidden flex items-center justify-center transform hover:scale-105 transition-transform duration-500">
                         <img
-                            src="https://images.unsplash.com/photo-1563505391550-14227c4fbbe1?auto=format&fit=crop&q=80&w=400"
-                            alt="Trophy"
-                            className="w-full h-full object-cover"
+                            src="/Trofeo2.png"
+                            alt="Alemanish Trophy"
+                            className="max-w-full max-h-full object-contain drop-shadow-2xl"
                         />
                     </div>
                 </div>
@@ -36,54 +54,23 @@ export const LessonCompleted: React.FC = () => {
                     ¡Nivel Completado!
                 </h1>
                 <p className="text-slate-500 font-semibold mb-10 text-center">
-                    Has alcanzado un nuevo hito en tu aprendizaje de alemán.
+                    Has alcanzado un nuevo hito en tu aprendizaje de Alemán Coloniero.
                 </p>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 gap-4 w-full mb-10">
-                    <div className="bg-white rounded-2xl p-5 flex flex-col items-center justify-center shadow-sm border border-gray-100">
+                <div className="flex justify-center w-full mb-10">
+                    <div className="bg-white rounded-2xl p-5 flex flex-col items-center justify-center shadow-sm border border-gray-100 min-w-[220px]">
                         <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
-                            Experiencia Ganada
+                            Fresas Recolectadas
                         </p>
-                        <div className="flex items-center text-[#F59E0B] font-extrabold text-2xl md:text-3xl">
-                            <BoltIcon fontSize="inherit" className="mr-1" />
-                            +50 XP
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-2xl p-5 flex flex-col items-center justify-center shadow-sm border border-gray-100">
-                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
-                            Racha Actual
-                        </p>
-                        <div className="flex items-center text-[#F97316] font-extrabold text-2xl md:text-3xl">
-                            <LocalFireDepartmentIcon fontSize="inherit" className="mr-1" />
-                            7 Días
+                        <div className="flex items-center text-red-500 font-extrabold text-2xl md:text-3xl">
+                            <span role="img" aria-label="Strawberry" className="text-3xl mr-2 drop-shadow-sm">🍓</span>
+                            +50
                         </div>
                     </div>
                 </div>
 
-                {/* Progress Bar Container */}
-                <div className="w-full bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-12">
-                    <p className="text-[10px] font-bold text-slate-400 tracking-widest uppercase mb-1">
-                        Progreso del Nivel
-                    </p>
-                    <div className="flex justify-between items-end mb-3">
-                        <span className="text-sm md:text-base font-extrabold text-slate-800">
-                            Nivel B1.1
-                        </span>
-                        <span className="font-extrabold text-emerald-600 text-lg">
-                            75%
-                        </span>
-                    </div>
 
-                    <div className="h-2 w-full bg-gray-100 rounded-full overflow-hidden mb-4">
-                        <div className="h-full bg-emerald-500 rounded-full" style={{ width: '75%' }}></div>
-                    </div>
-
-                    <div className="flex items-center justify-center text-slate-400 text-xs font-semibold">
-                        <FlagIcon fontSize="small" className="mr-1 opacity-70" />
-                        Siguiente objetivo: B1.2
-                    </div>
-                </div>
 
                 {/* Continue Action */}
                 <button

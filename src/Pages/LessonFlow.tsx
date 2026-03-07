@@ -6,25 +6,34 @@ import { TranslationLesson } from '../Components/LessonFlow/TranslationLesson';
 import { AudioImageLesson } from '../Components/LessonFlow/AudioImageLesson';
 import { CompleteWordLesson } from '../Components/LessonFlow/CompleteWordLesson';
 import mockLessonsData from '../data/mockLessons.json';
-import type { LessonData } from '../types/lesson';
+import type { LessonModule } from '../types/lesson';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { useNavigate } from 'react-router-dom';
-
-const mockLessons = mockLessonsData as LessonData[];
+const modulesArray = mockLessonsData as LessonModule[];
 
 export const LessonFlow: React.FC = () => {
     const navigate = useNavigate();
+    const { moduleId } = useParams<{ moduleId: string }>();
+
+    // Load dynamic module from URL
+    const currentModule = modulesArray.find(m => m.moduleId === moduleId) || modulesArray[0];
+    const moduleLessons = currentModule.lessons;
     const [lessonIndex, setLessonIndex] = useState(0);
     const [canCheck, setCanCheck] = useState<boolean>(false);
     const [selectedValue, setSelectedValue] = useState<string | null>(null);
     const [checkStatus, setCheckStatus] = useState<'idle' | 'correct' | 'incorrect'>('idle');
 
     // Get the current lesson based on index
-    const currentLessonData = mockLessons[lessonIndex];
+    const currentLessonData = moduleLessons[lessonIndex];
 
     const handleSkip = () => {
         const nextIndex = lessonIndex + 1;
-        if (nextIndex >= mockLessons.length) {
+        if (nextIndex >= moduleLessons.length) {
+            // Check unlocking conditions
+            if (currentModule.moduleId === 'saludos') {
+                localStorage.setItem('unlocked_familia', 'true');
+            }
+
             navigate('/completed');
             return;
         }
@@ -62,14 +71,14 @@ export const LessonFlow: React.FC = () => {
     };
 
     // Compute dynamic progress percentage (e.g. 0%, 33%, 66%)
-    const progressPercentage = Math.round((lessonIndex / mockLessons.length) * 100);
+    const progressPercentage = Math.round((lessonIndex / moduleLessons.length) * 100);
 
     return (
         <div className="min-h-screen bg-[#E5E9F0] flex flex-col font-sans">
             <div className="max-w-4xl mx-auto w-full flex-1 flex flex-col pb-24">
                 {/* Header Section */}
                 <LessonHeader />
-                <ProgressBar title="SALUDOS Y CORTESÍA" percentage={progressPercentage} />
+                <ProgressBar title={currentModule.title} percentage={progressPercentage} />
 
                 {/* Main Content Area */}
                 <main className="flex-1 flex flex-col w-full">

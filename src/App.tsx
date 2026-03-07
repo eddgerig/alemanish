@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/lesson" element={<LessonFlow />} />
+        <Route path="/lesson/:moduleId" element={<LessonFlow />} />
         <Route path="/completed" element={<LessonCompleted />} />
       </Routes>
     </BrowserRouter>

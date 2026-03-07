@@ -11,39 +11,59 @@ import HomeIcon from '@mui/icons-material/Home';
 import PetsIcon from '@mui/icons-material/Pets';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 export const Dashboard: React.FC = () => {
     const navigate = useNavigate();
 
+    // Fetch unlocked status from localStorage
+    const isFamiliaUnlocked = localStorage.getItem('unlocked_familia') === 'true';
+
+    // Status logic
+    const saludosStatus = isFamiliaUnlocked ? 'completed' : 'current';
+    const familiaStatus = isFamiliaUnlocked ? 'current' : 'locked';
+
     return (
         <div className="min-h-screen bg-[#E5E9F0] flex flex-col items-center pb-24 relative overflow-x-hidden">
+
+            {/* Background Image Layer */}
+            <div className="fixed inset-0 z-0 pointer-events-none">
+                <img
+                    src="/ColoniaTovar_Background.jpg"
+                    alt="Background Colonia Tovar"
+                    className="w-full h-full object-cover opacity-80"
+                />
+            </div>
+            {/* Overlay Gradient to ensure text readability */}
+            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-white/0 to-[#E5E9F0]/60"></div>
+
             {/* Header component */}
-            <Header />
+            <div className="w-full z-50 fixed top-0 left-0">
+                <Header />
+            </div>
 
             {/* Main Path Container */}
-            <main className="w-full max-w-lg mt-8 flex flex-col items-center relative flex-1 px-4">
+            <main className="w-full max-w-lg mt-24 flex flex-col items-center relative flex-1 px-4 z-10">
 
                 {/* Background Vertical Line */}
-                <div className="absolute top-0 bottom-0 w-4 bg-green-900 bg-opacity-10 rounded-full inset-x-0 mx-auto z-0" style={{ height: 'calc(100% - 120px)' }}></div>
+                <div className="absolute top-0 bottom-0 w-4 bg-green-900 bg-opacity-10 rounded-full inset-x-0 mx-auto -z-10" style={{ height: 'calc(100% - 120px)' }}></div>
 
                 {/* Nodes */}
-                {/* Node 1: Current */}
+                {/* Node 1: Current / Completed */}
                 <Category
                     title="SALUDOS Y CORTESÍA"
                     icon={<HandshakeIcon fontSize="large" />}
-                    status="current"
-                    badge="1"
+                    status={saludosStatus}
                     offsetX={0}
-                    onClick={() => navigate('/lesson')}
+                    onClick={() => navigate('/lesson/saludos')}
                 />
 
-                {/* Node 2: Locked (shifted right) */}
+                {/* Node 2: Locked / Current (shifted right) */}
                 <Category
                     title="LA FAMILIA"
                     icon={<FamilyRestroomIcon fontSize="large" />}
-                    status="locked"
+                    status={familiaStatus}
                     offsetX={35}
+                    onClick={() => isFamiliaUnlocked && navigate('/lesson/familia')}
                 />
 
                 {/* Node 3: Locked (shifted left) */}
@@ -78,14 +98,6 @@ export const Dashboard: React.FC = () => {
                 />
 
             </main>
-
-            {/* Floating Bottom Button */}
-            <div className="fixed bottom-0 w-full bg-[#f4f6f8] border-t-2 border-gray-200 p-4 flex justify-center z-50">
-                <button className="w-full max-w-sm bg-green-700 hover:bg-green-600 active:bg-green-800 text-white font-extrabold py-4 px-6 rounded-2xl shadow-[0_5px_0_0_#166534] active:shadow-none active:translate-y-1 transition-all flex items-center justify-center uppercase tracking-wide text-lg">
-                    <PlayArrowIcon className="mr-2" />
-                    Continuar aprendiendo
-                </button>
-            </div>
 
         </div>
     );

@@ -1,60 +1,126 @@
 [
     {
-        "type": "translation",
-        "questionPrefix": "¿Cómo se dice ",
-        "highlightedWord": "\"Hola\"",
-        "questionSuffix": "?",
-        "correctOptionId": "maitili",
-        "options": [
+        "moduleId": "saludos",
+        "title": "Saludos y Cortesía",
+        "lessons": [
             {
-                "id": "gutentag",
-                "title": "Guten Tag",
-                "subtitle": "Buen día",
-                "iconName": "sun"
-            },
-            {
-                "id": "maitili",
-                "title": "Maitili",
-                "subtitle": "Hola / Buen día",
-                "iconName": "hand"
-            },
-            {
-                "id": "danke",
-                "title": "Danke",
-                "subtitle": "Gracias",
-                "iconName": "heart"
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Hola\"",
+                "questionSuffix": "?",
+                "correctOptionId": "maitili",
+                "options": [
+                    {
+                        "id": "gutentag",
+                        "title": "Guten Tag",
+                        "subtitle": "Buen día",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "subtitle": "Hola / Buen día",
+                        "iconName": "hand"
+                    },
+                    {
+                        "id": "danke",
+                        "title": "Danke",
+                        "subtitle": "Gracias",
+                        "iconName": "heart"
+                    }
+                ]
             }
         ]
     },
     {
-        "type": "audioImage",
-        "instruction": "Escucha y selecciona la imagen correcta",
-        "audioUrl": "/audios/mutter.mp3",
-        "phoneticText": "'Mutter'",
-        "correctOptionId": "mutti",
-        "options": [
+        "moduleId": "familia",
+        "title": "La Familia",
+        "lessons": [
             {
-                "id": "mutti",
-                "title": "Mutti",
-                "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Mutti"
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Padre\"",
+                "questionSuffix": "?",
+                "correctOptionId": "vatti",
+                "options": [
+                    {
+                        "id": "opa",
+                        "title": "Opa",
+                        "subtitle": "Abuelo",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "vatti",
+                        "title": "Vati",
+                        "subtitle": "Papá / Padre",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "mutti",
+                        "title": "Mutti",
+                        "subtitle": "Mamá / Madre",
+                        "iconName": "hand"
+                    }
+                ]
             },
             {
-                "id": "vatti",
-                "title": "Vatti",
-                "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Vatti"
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen correcta",
+                "audioUrl": "/audios/bruder.mp3",
+                "phoneticText": "'Bruda'",
+                "correctOptionId": "bruda",
+                "options": [
+                    {
+                        "id": "mutti",
+                        "title": "Mutti",
+                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Mutti"
+                    },
+                    {
+                        "id": "vatti",
+                        "title": "Vati",
+                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Vatti"
+                    },
+                    {
+                        "id": "bruda",
+                        "title": "Bruda",
+                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Bruda"
+                    }
+                ]
             },
             {
-                "id": "bruda",
-                "title": "Bruda",
-                "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Bruda"
+                "type": "completeWord",
+                "imageUrl": "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&q=80&w=500",
+                "audioUrl": "/audios/grossmutter.mp3",
+                "targetWord": "OMA",
+                "visibleCharacters": 1
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Hermana\"",
+                "questionSuffix": "?",
+                "correctOptionId": "schwester",
+                "options": [
+                    {
+                        "id": "omi",
+                        "title": "Omi",
+                        "subtitle": "Abuela",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "tante",
+                        "title": "Tante",
+                        "subtitle": "Tía",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "schwester",
+                        "title": "Schwesda",
+                        "subtitle": "Hermana",
+                        "iconName": "hand"
+                    }
+                ]
             }
         ]
-    },
-    {
-        "type": "completeWord",
-        "imageUrl": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=500",
-        "audioUrl": "/audios/perro.mp3",
-        "targetWord": "PERRO",
-        "visibleCharacters": 1
     }
 ]

@@ -24,7 +24,7 @@ export const Section: React.FC<SectionProps> = ({ title, subtitle, icon }) => {
             </div>
 
             {/* Section Title and Subtitle */}
-            <div className="text-center mt-4">
+            <div className="text-center mt-4 bg-white/90 backdrop-blur-sm px-6 py-4 rounded-xl shadow-sm border border-gray-100 max-w-xs transition-colors">
                 <h2 className="text-sm font-extrabold text-green-700 tracking-wider uppercase mb-1 drop-shadow-sm">
                     {title}
                 </h2>
