@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Header } from '@Components/Header';
 import { Category } from '@Components/Category';
 import { Section } from '@Components/Section';
+import mockLessonsData from '../data/mockLessons.json';
+import type { LessonModule } from '../types/lesson';
 
 // MUI Icons
 import HandshakeIcon from '@mui/icons-material/Handshake';
@@ -10,17 +12,31 @@ import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 import HomeIcon from '@mui/icons-material/Home';
 import PetsIcon from '@mui/icons-material/Pets';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import ColorLensIcon from '@mui/icons-material/ColorLens';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+
+const modulesArray = mockLessonsData as LessonModule[];
+
+const getIconForModule = (moduleId: string) => {
+    switch (moduleId) {
+        case 'saludos': return <HandshakeIcon fontSize="large" />;
+        case 'familia': return <FamilyRestroomIcon fontSize="large" />;
+        case 'comida': return <RestaurantIcon fontSize="large" />;
+        case 'otros': return <HomeIcon fontSize="large" />;
+        case 'animales': return <PetsIcon fontSize="large" />;
+        case 'colores': return <ColorLensIcon fontSize="large" />;
+        default: return <EmojiEventsIcon fontSize="large" />;
+    }
+};
+
+const getOffsetX = (index: number) => {
+    // A nice alternating wave pattern for the tree nodes: [center, right, left, right, left, center]
+    const offsets = [0, 35, -40, 30, -35, 0];
+    return offsets[index % offsets.length];
+};
 
 export const Dashboard: React.FC = () => {
     const navigate = useNavigate();
-
-    // Fetch unlocked status from localStorage
-    const isFamiliaUnlocked = localStorage.getItem('unlocked_familia') === 'true';
-
-    // Status logic
-    const saludosStatus = isFamiliaUnlocked ? 'completed' : 'current';
-    const familiaStatus = isFamiliaUnlocked ? 'current' : 'locked';
 
     return (
         <div className="min-h-screen bg-[#E5E9F0] flex flex-col items-center pb-24 relative overflow-x-hidden">
@@ -47,48 +63,29 @@ export const Dashboard: React.FC = () => {
                 {/* Background Vertical Line */}
                 <div className="absolute top-0 bottom-0 w-4 bg-green-900 bg-opacity-10 rounded-full inset-x-0 mx-auto -z-10" style={{ height: 'calc(100% - 120px)' }}></div>
 
-                {/* Nodes */}
-                {/* Node 1: Current / Completed */}
-                <Category
-                    title="SALUDOS Y CORTESÍA"
-                    icon={<HandshakeIcon fontSize="large" />}
-                    status={saludosStatus}
-                    offsetX={0}
-                    onClick={() => navigate('/lesson/saludos')}
-                />
+                {/* Nodes mapped dynamically from the JSON file */}
+                {modulesArray.map((module, index) => {
+                    // The first module in the array is always unlocked by default
+                    const isUnlocked = index === 0 || localStorage.getItem(`unlocked_${module.moduleId}`) === 'true';
+                    // Check if the SUBSEQUENT module is unlocked (if so, this current one is considered 'completed')
+                    const isNextUnlocked = localStorage.getItem(`unlocked_${modulesArray[index + 1]?.moduleId}`) === 'true';
 
-                {/* Node 2: Locked / Current (shifted right) */}
-                <Category
-                    title="LA FAMILIA"
-                    icon={<FamilyRestroomIcon fontSize="large" />}
-                    status={familiaStatus}
-                    offsetX={35}
-                    onClick={() => isFamiliaUnlocked && navigate('/lesson/familia')}
-                />
+                    let status: "locked" | "current" | "completed" = "locked";
+                    if (isUnlocked) {
+                        status = isNextUnlocked ? "completed" : "current";
+                    }
 
-                {/* Node 3: Locked (shifted left) */}
-                <Category
-                    title="EL HOGAR"
-                    icon={<HomeIcon fontSize="large" />}
-                    status="locked"
-                    offsetX={-40}
-                />
-
-                {/* Node 4: Locked (centered) */}
-                <Category
-                    title="ANIMALES"
-                    icon={<PetsIcon fontSize="large" />}
-                    status="locked"
-                    offsetX={0}
-                />
-
-                {/* Node 5: Locked (shifted right) */}
-                <Category
-                    title="COMIDA"
-                    icon={<RestaurantIcon fontSize="large" />}
-                    status="locked"
-                    offsetX={30}
-                />
+                    return (
+                        <Category
+                            key={module.moduleId}
+                            title={module.title.toUpperCase()}
+                            icon={getIconForModule(module.moduleId)}
+                            status={status}
+                            offsetX={getOffsetX(index)}
+                            onClick={() => isUnlocked && navigate(`/lesson/${module.moduleId}`)}
+                        />
+                    );
+                })}
 
                 {/* Section Diamond Node at the bottom */}
                 <Section

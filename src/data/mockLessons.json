@@ -1,31 +1,511 @@
 [
     {
+        "moduleId": "familia",
+        "title": "La Familia",
+        "lessons": [
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Mamá\"",
+                "questionSuffix": "?",
+                "correctOptionId": "muater",
+                "options": [
+                    {
+                        "id": "foter",
+                        "title": "Foter",
+                        "subtitle": "Papá",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "muater",
+                        "title": "Muater",
+                        "subtitle": "Mamá",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "kingstag",
+                        "title": "Kingstag",
+                        "subtitle": "Niño",
+                        "iconName": "star"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen correcta para 'Papá'",
+                "audioUrl": "/audios/foter.mp3",
+                "phoneticText": "'Foter'",
+                "correctOptionId": "foter",
+                "options": [
+                    {
+                        "id": "muater",
+                        "title": "Muater",
+                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Muater"
+                    },
+                    {
+                        "id": "foter",
+                        "title": "Foter",
+                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Foter"
+                    },
+                    {
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Maitili"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "moduleId": "saludos",
         "title": "Saludos y Cortesía",
         "lessons": [
             {
                 "type": "translation",
                 "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Hola\"",
+                "highlightedWord": "\"Hasta luego\"",
                 "questionSuffix": "?",
-                "correctOptionId": "maitili",
+                "correctOptionId": "otie",
                 "options": [
                     {
-                        "id": "gutentag",
-                        "title": "Guten Tag",
-                        "subtitle": "Buen día",
-                        "iconName": "sun"
-                    },
-                    {
-                        "id": "maitili",
-                        "title": "Maitili",
-                        "subtitle": "Hola / Buen día",
+                        "id": "otie",
+                        "title": "Otie",
+                        "subtitle": "Hasta luego",
                         "iconName": "hand"
                     },
                     {
-                        "id": "danke",
-                        "title": "Danke",
-                        "subtitle": "Gracias",
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "subtitle": "Buenos Dias",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "subtitle": "Bienvenido",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Buenos Dias\"",
+                "questionSuffix": "?",
+                "correctOptionId": "cuata_morka",
+                "options": [
+                    {
+                        "id": "cuata_zowa",
+                        "title": "Cuata Zowa",
+                        "subtitle": "Buenas Tardes",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "cuata_nojt",
+                        "title": "Cuata Nojt",
+                        "subtitle": "Buenas Noches",
+                        "iconName": "moon"
+                    },
+                    {
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "subtitle": "Buenos Dias",
+                        "iconName": "star"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "https://images.unsplash.com/photo-1517816743773-6e0fd5ce6a64?auto=format&fit=crop&q=80&w=500",
+                "audioUrl": "/audios/buenas_noches.mp3",
+                "targetWord": "CUATA NOJT",
+                "visibleCharacters": 4
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Buenas Tardes\"",
+                "questionSuffix": "?",
+                "correctOptionId": "cuata_zowa",
+                "options": [
+                    {
+                        "id": "cuata_zowa",
+                        "title": "Cuata Zowa",
+                        "subtitle": "Buenas Tardes",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "subtitle": "Muchas Gracias",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "subtitle": "Hasta luego",
+                        "iconName": "hand"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen correcta para 'Bienvenido'",
+                "audioUrl": "/audios/bienvenido.mp3",
+                "phoneticText": "'Kjuma Cuat'",
+                "correctOptionId": "kjuma_cuat",
+                "options": [
+                    {
+                        "id": "cuata_nojt",
+                        "title": "Cuata Nojt",
+                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=moon"
+                    },
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=door"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Muchas Gracias\"",
+                "questionSuffix": "?",
+                "correctOptionId": "tonk_schen",
+                "options": [
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "subtitle": "Muchas Gracias",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "subtitle": "Buenos Dias",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "subtitle": "Hasta luego",
+                        "iconName": "hand"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "moduleId": "comida",
+        "title": "Comida",
+        "lessons": [
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Arroz\"",
+                "questionSuffix": "?",
+                "correctOptionId": "ris",
+                "options": [
+                    {
+                        "id": "ris",
+                        "title": "Ris",
+                        "subtitle": "Arroz",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "pona",
+                        "title": "Pona",
+                        "subtitle": "Caraotas",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "brot",
+                        "title": "Brot",
+                        "subtitle": "Pan",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Caraotas\"",
+                "questionSuffix": "?",
+                "correctOptionId": "pona",
+                "options": [
+                    {
+                        "id": "brot",
+                        "title": "Brot",
+                        "subtitle": "Pan",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "ris",
+                        "title": "Ris",
+                        "subtitle": "Arroz",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "pona",
+                        "title": "Pona",
+                        "subtitle": "Caraotas",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=500",
+                "audioUrl": "/audios/pan.mp3",
+                "targetWord": "BROT",
+                "visibleCharacters": 1
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la fruta correcta ('Fresa')",
+                "audioUrl": "/audios/fresa.mp3",
+                "phoneticText": "'Arpala'",
+                "correctOptionId": "arpala",
+                "options": [
+                    {
+                        "id": "arpala",
+                        "title": "Arpala",
+                        "imageUrl": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "fisich",
+                        "title": "Fisich",
+                        "imageUrl": "https://images.unsplash.com/photo-1533709475520-a0745bba78bf?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "crumpera",
+                        "title": "Crumpera",
+                        "imageUrl": "https://images.unsplash.com/photo-1615486171448-4fbab9839f84?auto=format&fit=crop&q=80&w=500"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Durazno\"",
+                "questionSuffix": "?",
+                "correctOptionId": "fisich",
+                "options": [
+                    {
+                        "id": "fisich",
+                        "title": "Fisich",
+                        "subtitle": "Durazno",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "compira",
+                        "title": "Compira",
+                        "subtitle": "Cambur",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "monca",
+                        "title": "Monca",
+                        "subtitle": "Mango",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Mora\"",
+                "questionSuffix": "?",
+                "correctOptionId": "crumpera",
+                "options": [
+                    {
+                        "id": "arpala",
+                        "title": "Arpala",
+                        "subtitle": "Fresa",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "crumpera",
+                        "title": "Crumpera",
+                        "subtitle": "Mora",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "orosha",
+                        "title": "Orosha",
+                        "subtitle": "Naranja",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Cambur\"",
+                "questionSuffix": "?",
+                "correctOptionId": "compira",
+                "options": [
+                    {
+                        "id": "compira",
+                        "title": "Compira",
+                        "subtitle": "Cambur",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "jareplit",
+                        "title": "Jareplit",
+                        "subtitle": "Papa",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "fiica",
+                        "title": "Fiica",
+                        "subtitle": "Higo",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la fruta correcta ('Naranja')",
+                "audioUrl": "/audios/naranja.mp3",
+                "phoneticText": "'Orosha'",
+                "correctOptionId": "orosha",
+                "options": [
+                    {
+                        "id": "orosha",
+                        "title": "Orosha",
+                        "imageUrl": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "monca",
+                        "title": "Monca",
+                        "imageUrl": "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "fluima",
+                        "title": "Fluima",
+                        "imageUrl": "https://images.unsplash.com/photo-1596733430284-f7437275e533?auto=format&fit=crop&q=80&w=500"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Mango\"",
+                "questionSuffix": "?",
+                "correctOptionId": "monca",
+                "options": [
+                    {
+                        "id": "monca",
+                        "title": "Monca",
+                        "subtitle": "Mango",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "eplif",
+                        "title": "Eplif",
+                        "subtitle": "Manzana",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "jareplit",
+                        "title": "Jareplit",
+                        "subtitle": "Papa",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "https://images.unsplash.com/photo-1596591077717-38e55e424268?auto=format&fit=crop&q=80&w=500",
+                "audioUrl": "/audios/uchuva.mp3",
+                "targetWord": "FLUIMA",
+                "visibleCharacters": 2
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Higo\"",
+                "questionSuffix": "?",
+                "correctOptionId": "fiica",
+                "options": [
+                    {
+                        "id": "fiica",
+                        "title": "Fiica",
+                        "subtitle": "Higo",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "compira",
+                        "title": "Compira",
+                        "subtitle": "Cambur",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "arpala",
+                        "title": "Arpala",
+                        "subtitle": "Fresa",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Manzana\"",
+                "questionSuffix": "?",
+                "correctOptionId": "eplif",
+                "options": [
+                    {
+                        "id": "eplif",
+                        "title": "Eplif",
+                        "subtitle": "Manzana",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "monca",
+                        "title": "Monca",
+                        "subtitle": "Mango",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "orosha",
+                        "title": "Orosha",
+                        "subtitle": "Naranja",
+                        "iconName": "star"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Papa\"",
+                "questionSuffix": "?",
+                "correctOptionId": "jareplit",
+                "options": [
+                    {
+                        "id": "ris",
+                        "title": "Ris",
+                        "subtitle": "Arroz",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "jareplit",
+                        "title": "Jareplit",
+                        "subtitle": "Papa",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "pona",
+                        "title": "Pona",
+                        "subtitle": "Caraotas",
                         "iconName": "heart"
                     }
                 ]
@@ -33,91 +513,675 @@
         ]
     },
     {
-        "moduleId": "familia",
-        "title": "La Familia",
+        "moduleId": "otros",
+        "title": "Palabras Generales",
         "lessons": [
             {
                 "type": "translation",
                 "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Padre\"",
+                "highlightedWord": "\"Hombre\"",
                 "questionSuffix": "?",
-                "correctOptionId": "vatti",
+                "correctOptionId": "mon",
                 "options": [
                     {
-                        "id": "opa",
-                        "title": "Opa",
-                        "subtitle": "Abuelo",
+                        "id": "froid",
+                        "title": "Froid",
+                        "subtitle": "Señora",
                         "iconName": "heart"
                     },
                     {
-                        "id": "vatti",
-                        "title": "Vati",
-                        "subtitle": "Papá / Padre",
-                        "iconName": "sun"
+                        "id": "mon",
+                        "title": "Mon",
+                        "subtitle": "Hombre",
+                        "iconName": "star"
                     },
                     {
-                        "id": "mutti",
-                        "title": "Mutti",
-                        "subtitle": "Mamá / Madre",
-                        "iconName": "hand"
+                        "id": "old",
+                        "title": "Old",
+                        "subtitle": "Vieja",
+                        "iconName": "sun"
                     }
                 ]
             },
             {
                 "type": "audioImage",
-                "instruction": "Escucha y selecciona la imagen correcta",
-                "audioUrl": "/audios/bruder.mp3",
-                "phoneticText": "'Bruda'",
-                "correctOptionId": "bruda",
+                "instruction": "Escucha y selecciona la imagen para 'Luna'",
+                "audioUrl": "/audios/luna.mp3",
+                "phoneticText": "'Moon'",
+                "correctOptionId": "moon",
                 "options": [
                     {
-                        "id": "mutti",
-                        "title": "Mutti",
-                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Mutti"
+                        "id": "shis",
+                        "title": "Shis",
+                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=house"
                     },
                     {
-                        "id": "vatti",
-                        "title": "Vati",
-                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Vatti"
+                        "id": "moon",
+                        "title": "Moon",
+                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=moon"
                     },
                     {
-                        "id": "bruda",
-                        "title": "Bruda",
-                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Bruda"
+                        "id": "ruodt",
+                        "title": "Ruodt",
+                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=wheel"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Niño\"",
+                "questionSuffix": "?",
+                "correctOptionId": "kingstag",
+                "options": [
+                    {
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "subtitle": "Niña",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "kingstag",
+                        "title": "Kingstag",
+                        "subtitle": "Niño",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "mon",
+                        "title": "Mon",
+                        "subtitle": "Hombre",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Niña\"",
+                "questionSuffix": "?",
+                "correctOptionId": "maitili",
+                "options": [
+                    {
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "subtitle": "Niña",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "old",
+                        "title": "Old",
+                        "subtitle": "Vieja",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "froid",
+                        "title": "Froid",
+                        "subtitle": "Señora",
+                        "iconName": "sun"
                     }
                 ]
             },
             {
                 "type": "completeWord",
-                "imageUrl": "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&q=80&w=500",
-                "audioUrl": "/audios/grossmutter.mp3",
-                "targetWord": "OMA",
-                "visibleCharacters": 1
+                "imageUrl": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=500",
+                "audioUrl": "/audios/carro.mp3",
+                "targetWord": "CORRA",
+                "visibleCharacters": 2
             },
             {
                 "type": "translation",
                 "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Hermana\"",
+                "highlightedWord": "\"Borracho\"",
                 "questionSuffix": "?",
-                "correctOptionId": "schwester",
+                "correctOptionId": "zoffa",
                 "options": [
                     {
-                        "id": "omi",
-                        "title": "Omi",
-                        "subtitle": "Abuela",
-                        "iconName": "heart"
-                    },
-                    {
-                        "id": "tante",
-                        "title": "Tante",
-                        "subtitle": "Tía",
+                        "id": "orbat",
+                        "title": "Orbat",
+                        "subtitle": "Trabajo",
                         "iconName": "sun"
                     },
                     {
-                        "id": "schwester",
-                        "title": "Schwesda",
-                        "subtitle": "Hermana",
-                        "iconName": "hand"
+                        "id": "zoffa",
+                        "title": "Zoffa",
+                        "subtitle": "Borracho",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "mon",
+                        "title": "Mon",
+                        "subtitle": "Hombre",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Vieja\"",
+                "questionSuffix": "?",
+                "correctOptionId": "old",
+                "options": [
+                    {
+                        "id": "old",
+                        "title": "Old",
+                        "subtitle": "Vieja",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "froid",
+                        "title": "Froid",
+                        "subtitle": "Señora",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "subtitle": "Niña",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Señora\"",
+                "questionSuffix": "?",
+                "correctOptionId": "froid",
+                "options": [
+                    {
+                        "id": "froid",
+                        "title": "Froid",
+                        "subtitle": "Señora",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "mon",
+                        "title": "Mon",
+                        "subtitle": "Hombre",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "kingstag",
+                        "title": "Kingstag",
+                        "subtitle": "Niño",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Trabajo\"",
+                "questionSuffix": "?",
+                "correctOptionId": "orbat",
+                "options": [
+                    {
+                        "id": "orbat",
+                        "title": "Orbat",
+                        "subtitle": "Trabajo",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "corra",
+                        "title": "Corra",
+                        "subtitle": "Carro",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "shis",
+                        "title": "Shis",
+                        "subtitle": "Casa",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen para 'Casa'",
+                "audioUrl": "/audios/casa.mp3",
+                "phoneticText": "'Shis'",
+                "correctOptionId": "shis",
+                "options": [
+                    {
+                        "id": "shis",
+                        "title": "Shis",
+                        "imageUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "corra",
+                        "title": "Corra",
+                        "imageUrl": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "ruodt",
+                        "title": "Ruodt",
+                        "imageUrl": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=500"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Rueda\"",
+                "questionSuffix": "?",
+                "correctOptionId": "ruodt",
+                "options": [
+                    {
+                        "id": "corra",
+                        "title": "Corra",
+                        "subtitle": "Carro",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "ruodt",
+                        "title": "Ruodt",
+                        "subtitle": "Rueda",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "shis",
+                        "title": "Shis",
+                        "subtitle": "Casa",
+                        "iconName": "heart"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "moduleId": "animales",
+        "title": "Animales",
+        "lessons": [
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Gato\"",
+                "questionSuffix": "?",
+                "correctOptionId": "costs",
+                "options": [
+                    {
+                        "id": "junts",
+                        "title": "Junts",
+                        "subtitle": "Perro",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "costs",
+                        "title": "Costs",
+                        "subtitle": "Gato",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "rot",
+                        "title": "Rot",
+                        "subtitle": "Raton",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen del animal ('Caballo')",
+                "audioUrl": "/audios/caballo.mp3",
+                "phoneticText": "'Ros'",
+                "correctOptionId": "ros",
+                "options": [
+                    {
+                        "id": "junts",
+                        "title": "Junts",
+                        "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "ros",
+                        "title": "Ros",
+                        "imageUrl": "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80&w=500"
+                    },
+                    {
+                        "id": "costs",
+                        "title": "Costs",
+                        "imageUrl": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=500"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=500",
+                "audioUrl": "/audios/perro.mp3",
+                "targetWord": "JUNTS",
+                "visibleCharacters": 2
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Raton\"",
+                "questionSuffix": "?",
+                "correctOptionId": "rot",
+                "options": [
+                    {
+                        "id": "rot",
+                        "title": "Rot",
+                        "subtitle": "Raton",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "ros",
+                        "title": "Ros",
+                        "subtitle": "Caballo",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "costs",
+                        "title": "Costs",
+                        "subtitle": "Gato",
+                        "iconName": "heart"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "moduleId": "colores",
+        "title": "Colores",
+        "lessons": [
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Blanco\"",
+                "questionSuffix": "?",
+                "correctOptionId": "bis",
+                "options": [
+                    {
+                        "id": "bis",
+                        "title": "Bis",
+                        "subtitle": "Blanco",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "chuots",
+                        "title": "Chuots",
+                        "subtitle": "Negro",
+                        "iconName": "moon"
+                    },
+                    {
+                        "id": "ploy",
+                        "title": "Ploy",
+                        "subtitle": "Azul",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Azul\"",
+                "questionSuffix": "?",
+                "correctOptionId": "ploy",
+                "options": [
+                    {
+                        "id": "root",
+                        "title": "Root",
+                        "subtitle": "Rojo",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "ploy",
+                        "title": "Ploy",
+                        "subtitle": "Azul",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "criant",
+                        "title": "Criant",
+                        "subtitle": "Verde",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona el color correcto ('Rojo')",
+                "audioUrl": "/audios/rojo.mp3",
+                "phoneticText": "'Root'",
+                "correctOptionId": "root",
+                "options": [
+                    {
+                        "id": "root",
+                        "title": "Root",
+                        "imageUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=Red"
+                    },
+                    {
+                        "id": "call",
+                        "title": "Call",
+                        "imageUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=Yellow"
+                    },
+                    {
+                        "id": "criant",
+                        "title": "Criant",
+                        "imageUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=Green"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Amarillo\"",
+                "questionSuffix": "?",
+                "correctOptionId": "call",
+                "options": [
+                    {
+                        "id": "call",
+                        "title": "Call",
+                        "subtitle": "Amarillo",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "jalrat",
+                        "title": "Jalrat",
+                        "subtitle": "Rosado",
+                        "iconName": "heart"
+                    },
+                    {
+                        "id": "orosig",
+                        "title": "Orosig",
+                        "subtitle": "Naranja",
+                        "iconName": "star"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Verde\"",
+                "questionSuffix": "?",
+                "correctOptionId": "criant",
+                "options": [
+                    {
+                        "id": "ploy",
+                        "title": "Ploy",
+                        "subtitle": "Azul",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "criant",
+                        "title": "Criant",
+                        "subtitle": "Verde",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "prun",
+                        "title": "Prun",
+                        "subtitle": "Marron",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=Pink",
+                "audioUrl": "/audios/rosado.mp3",
+                "targetWord": "JALRAT",
+                "visibleCharacters": 2
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Negro\"",
+                "questionSuffix": "?",
+                "correctOptionId": "chuots",
+                "options": [
+                    {
+                        "id": "bis",
+                        "title": "Bis",
+                        "subtitle": "Blanco",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "chuots",
+                        "title": "Chuots",
+                        "subtitle": "Negro",
+                        "iconName": "moon"
+                    },
+                    {
+                        "id": "ashik",
+                        "title": "Ashik",
+                        "subtitle": "Gris",
+                        "iconName": "star"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Gris\"",
+                "questionSuffix": "?",
+                "correctOptionId": "ashik",
+                "options": [
+                    {
+                        "id": "ashik",
+                        "title": "Ashik",
+                        "subtitle": "Gris",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "chuots",
+                        "title": "Chuots",
+                        "subtitle": "Negro",
+                        "iconName": "moon"
+                    },
+                    {
+                        "id": "jal_prun",
+                        "title": "Jal Prun",
+                        "subtitle": "Beige",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Azul Oscuro\"",
+                "questionSuffix": "?",
+                "correctOptionId": "schuortz_ploi",
+                "options": [
+                    {
+                        "id": "ploy",
+                        "title": "Ploy",
+                        "subtitle": "Azul",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "schuortz_ploi",
+                        "title": "Schuortz ploi",
+                        "subtitle": "Azul Oscuro",
+                        "iconName": "moon"
+                    },
+                    {
+                        "id": "ashik",
+                        "title": "Ashik",
+                        "subtitle": "Gris",
+                        "iconName": "sun"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Marron\"",
+                "questionSuffix": "?",
+                "correctOptionId": "prun",
+                "options": [
+                    {
+                        "id": "prun",
+                        "title": "Prun",
+                        "subtitle": "Marron",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "jal_prun",
+                        "title": "Jal Prun",
+                        "subtitle": "Beige",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "root",
+                        "title": "Root",
+                        "subtitle": "Rojo",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Naranja\"",
+                "questionSuffix": "?",
+                "correctOptionId": "orosig",
+                "options": [
+                    {
+                        "id": "call",
+                        "title": "Call",
+                        "subtitle": "Amarillo",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "orosig",
+                        "title": "Orosig",
+                        "subtitle": "Naranja",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "jalrat",
+                        "title": "Jalrat",
+                        "subtitle": "Rosado",
+                        "iconName": "heart"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice el color ",
+                "highlightedWord": "\"Beige\"",
+                "questionSuffix": "?",
+                "correctOptionId": "jal_prun",
+                "options": [
+                    {
+                        "id": "prun",
+                        "title": "Prun",
+                        "subtitle": "Marron",
+                        "iconName": "star"
+                    },
+                    {
+                        "id": "jal_prun",
+                        "title": "Jal Prun",
+                        "subtitle": "Beige",
+                        "iconName": "sun"
+                    },
+                    {
+                        "id": "bis",
+                        "title": "Bis",
+                        "subtitle": "Blanco",
+                        "iconName": "moon"
                     }
                 ]
             }

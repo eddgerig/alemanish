@@ -3,7 +3,7 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 export const Header: React.FC = () => {
     return (
-        <header className="sticky top-0 z-50 w-full bg-white border-b-2 border-gray-200 flex items-center justify-between px-6 md:px-12 py-3 shadow-sm">
+        <header className="sticky top-0 z-50 w-full bg-transparent flex items-center justify-between px-6 md:px-12 py-3">
             {/* Left side: Logo */}
             <div className="flex items-center gap-2">
                 <div className="w-10 h-7 rounded-sm border border-gray-200 flex items-center justify-center overflow-hidden shadow-sm">

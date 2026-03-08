@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Confetti from 'react-confetti';
 
 export const LessonCompleted: React.FC = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    // Get unlocked module title from route state (if any)
+    const unlockedModuleTitle = location.state?.unlockedModuleTitle;
 
     // Track window dimensions for the confetti
     const [dimensions, setDimensions] = useState({
@@ -58,7 +62,7 @@ export const LessonCompleted: React.FC = () => {
                 </p>
 
                 {/* Stats Grid */}
-                <div className="flex justify-center w-full mb-10">
+                <div className="flex justify-center w-full mb-6">
                     <div className="bg-white rounded-2xl p-5 flex flex-col items-center justify-center shadow-sm border border-gray-100 min-w-[220px]">
                         <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
                             Fresas Recolectadas
@@ -70,7 +74,17 @@ export const LessonCompleted: React.FC = () => {
                     </div>
                 </div>
 
-
+                {/* Unlocked Next Level Card */}
+                {unlockedModuleTitle && (
+                    <div className="w-full bg-white rounded-2xl p-6 shadow-sm border border-emerald-200 mb-12 text-center transform hover:scale-105 transition-transform">
+                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                            ¡Siguiente nivel desbloqueado!
+                        </p>
+                        <h3 className="text-xl md:text-2xl font-extrabold text-emerald-600">
+                            {unlockedModuleTitle}
+                        </h3>
+                    </div>
+                )}
 
                 {/* Continue Action */}
                 <button

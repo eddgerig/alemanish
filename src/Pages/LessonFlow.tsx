@@ -29,12 +29,21 @@ export const LessonFlow: React.FC = () => {
     const handleSkip = () => {
         const nextIndex = lessonIndex + 1;
         if (nextIndex >= moduleLessons.length) {
-            // Check unlocking conditions
-            if (currentModule.moduleId === 'saludos') {
-                localStorage.setItem('unlocked_familia', 'true');
+            // Check dynamic unlocking conditions
+            const currentModuleIndex = modulesArray.findIndex(m => m.moduleId === currentModule.moduleId);
+            let unlockedModuleTitle = '';
+
+            if (currentModuleIndex >= 0 && currentModuleIndex < modulesArray.length - 1) {
+                const nextModule = modulesArray[currentModuleIndex + 1];
+
+                // Only mark as unlocked if it isn't already
+                if (localStorage.getItem(`unlocked_${nextModule.moduleId}`) !== 'true') {
+                    localStorage.setItem(`unlocked_${nextModule.moduleId}`, 'true');
+                    unlockedModuleTitle = nextModule.title;
+                }
             }
 
-            navigate('/completed');
+            navigate('/completed', { state: { unlockedModuleTitle } });
             return;
         }
 
