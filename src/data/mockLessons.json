@@ -14,19 +14,19 @@
                         "id": "otie",
                         "title": "Otie",
                         "imageUrl": "/otie.jpg",
-                        "audioUrl": "/audios/otie.mp3"
+                        "audioUrl": "/audios/otie.m4a"
                     },
                     {
                         "id": "cuata_morka",
                         "title": "Cuata Morka",
                         "imageUrl": "/cuatamorka.jpg",
-                        "audioUrl": "/audios/cuata_morka.mp3"
+                        "audioUrl": "/audios/cuatamorka.m4a"
                     },
                     {
                         "id": "kjuma_cuat",
                         "title": "Kjuma Cuat",
                         "imageUrl": "/kjumacuat.jpg",
-                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                        "audioUrl": "/audios/kjumacuat.m4a"
                     }
                 ]
             },
@@ -41,26 +41,26 @@
                         "id": "cuata_zowa",
                         "title": "Cuata Zowa",
                         "imageUrl": "/cuatazowa.jpg",
-                        "audioUrl": "/audios/cuata_zowa.mp3"
+                        "audioUrl": "/audios/cuatazowa.m4a"
                     },
                     {
                         "id": "cuata_nojt",
                         "title": "Cuata Nojt",
                         "imageUrl": "/cuatanojt.jpg",
-                        "audioUrl": "/audios/cuata_nojt.mp3"
+                        "audioUrl": "/audios/cuatanojt.m4a"
                     },
                     {
                         "id": "cuata_morka",
                         "title": "Cuata Morka",
                         "imageUrl": "/cuatamorka.jpg",
-                        "audioUrl": "/audios/cuata_morka.mp3"
+                        "audioUrl": "/audios/cuatamorka.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "/cuatanojt.jpg",
-                "audioUrl": "/audios/buenas_noches.mp3",
+                "audioUrl": "/audios/cuatanojt.m4a",
                 "targetWord": "CUATA NOJT",
                 "visibleCharacters": 6
             },
@@ -75,26 +75,26 @@
                         "id": "cuata_zowa",
                         "title": "Cuata Zowa",
                         "imageUrl": "/cuatazowa.jpg",
-                        "audioUrl": "/audios/cuata_zowa.mp3"
+                        "audioUrl": "/audios/cuatazowa.m4a"
                     },
                     {
                         "id": "tonk_schen",
                         "title": "Tonk Schen",
                         "imageUrl": "/tonkshen.jpg",
-                        "audioUrl": "/audios/tonk_schen.mp3"
+                        "audioUrl": "/audios/tonkschen.m4a"
                     },
                     {
                         "id": "otie",
                         "title": "Otie",
                         "imageUrl": "/otie.jpg",
-                        "audioUrl": "/audios/otie.mp3"
+                        "audioUrl": "/audios/otie.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen correcta para 'Bienvenido'",
-                "audioUrl": "/audios/bienvenido.mp3",
+                "audioUrl": "/audios/kjumacuat.m4a",
                 "phoneticText": "'Kjuma Cuat'",
                 "correctOptionId": "kjuma_cuat",
                 "options": [
@@ -126,26 +126,26 @@
                         "id": "tonk_schen",
                         "title": "Tonk Schen",
                         "imageUrl": "/tonkshen.jpg",
-                        "audioUrl": "/audios/tonk_schen.mp3"
+                        "audioUrl": "/audios/tonkschen.m4a"
                     },
                     {
                         "id": "cuata_morka",
                         "title": "Cuata Morka",
                         "imageUrl": "/cuatamorka.jpg",
-                        "audioUrl": "/audios/cuata_morka.mp3"
+                        "audioUrl": "/audios/cuatamorka.m4a"
                     },
                     {
                         "id": "otie",
                         "title": "Otie",
                         "imageUrl": "/otie.jpg",
-                        "audioUrl": "/audios/otie.mp3"
+                        "audioUrl": "/audios/otie.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "/cuatamorka.jpg",
-                "audioUrl": "/audios/cuata_morka.mp3",
+                "audioUrl": "/audios/cuatamorka.m4a",
                 "targetWord": "CUATA MORKA",
                 "visibleCharacters": 6
             },
@@ -160,26 +160,26 @@
                         "id": "cuata_nojt",
                         "title": "Cuata Nojt",
                         "imageUrl": "/cuatanojt.jpg",
-                        "audioUrl": "/audios/cuata_nojt.mp3"
+                        "audioUrl": "/audios/cuatanojt.m4a"
                     },
                     {
                         "id": "otie",
                         "title": "Otie",
                         "imageUrl": "/otie.jpg",
-                        "audioUrl": "/audios/otie.mp3"
+                        "audioUrl": "/audios/otie.m4a"
                     },
                     {
                         "id": "kjuma_cuat",
                         "title": "Kjuma Cuat",
                         "imageUrl": "/kjumacuat.jpg",
-                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                        "audioUrl": "/audios/kjumacuat.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen correcta para 'Buenas Tardes'",
-                "audioUrl": "/audios/cuata_zowa.mp3",
+                "audioUrl": "/audios/cuatazowa.m4a",
                 "phoneticText": "",
                 "correctOptionId": "cuata_zowa",
                 "options": [
@@ -211,33 +211,33 @@
                         "id": "cuata_nojt",
                         "title": "Cuata Nojt",
                         "imageUrl": "/cuatanojt.jpg",
-                        "audioUrl": "/audios/cuata_nojt.mp3"
+                        "audioUrl": "/audios/cuatanojt.m4a"
                     },
                     {
                         "id": "kjuma_cuat",
                         "title": "Kjuma Cuat",
                         "imageUrl": "/kjumacuat.jpg",
-                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                        "audioUrl": "/audios/kjumacuat.m4a"
                     },
                     {
                         "id": "tonk_schen",
                         "title": "Tonk Schen",
                         "imageUrl": "/tonkshen.jpg",
-                        "audioUrl": "/audios/tonk_schen.mp3"
+                        "audioUrl": "/audios/tonkschen.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "/otie.jpg",
-                "audioUrl": "/audios/otie.mp3",
+                "audioUrl": "/audios/otie.m4a",
                 "targetWord": "OTIE",
                 "visibleCharacters": 2
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen correcta para 'Muchas Gracias'",
-                "audioUrl": "/audios/tonk_schen.mp3",
+                "audioUrl": "/audios/tonkschen.m4a",
                 "phoneticText": "",
                 "correctOptionId": "tonk_schen",
                 "options": [
@@ -326,13 +326,13 @@
                         "id": "maitili",
                         "title": "Maitili",
                         "imageUrl": "/maitili.jpg",
-                        "audioUrl": "/audios/maitili.mp3"
+                        "audioUrl": "/audios/maitili.m4a"
                     },
                     {
                         "id": "kingstag",
                         "title": "Kingstag",
                         "imageUrl": "/kingstag.jpg",
-                        "audioUrl": "/audios/kingstag.mp3"
+                        "audioUrl": "/audios/kingstag.m4a"
                     },
                     {
                         "id": "foter",
@@ -345,7 +345,7 @@
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen correcta para 'Niña'",
-                "audioUrl": "/audios/maitili.mp3",
+                "audioUrl": "/audios/maitili.m4a",
                 "phoneticText": "",
                 "correctOptionId": "maitili",
                 "options": [
@@ -369,7 +369,7 @@
             {
                 "type": "completeWord",
                 "imageUrl": "/kingstag.jpg",
-                "audioUrl": "/audios/kingstag.mp3",
+                "audioUrl": "/audios/kingstag.m4a",
                 "targetWord": "KINGSTAG",
                 "visibleCharacters": 4
             }
@@ -390,19 +390,19 @@
                         "id": "ris",
                         "title": "Ris",
                         "imageUrl": "/ris.jpg",
-                        "audioUrl": "/audios/ris.mp3"
+                        "audioUrl": "/audios/ris.m4a"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
                         "imageUrl": "/pona.jpg",
-                        "audioUrl": "/audios/pona.mp3"
+                        "audioUrl": "/audios/pona.m4a"
                     },
                     {
                         "id": "brot",
                         "title": "Brot",
                         "imageUrl": "/brot.jpg",
-                        "audioUrl": "/audios/brot.mp3"
+                        "audioUrl": "/audios/brot.m4a"
                     }
                 ]
             },
@@ -417,33 +417,33 @@
                         "id": "brot",
                         "title": "Brot",
                         "imageUrl": "/brot.jpg",
-                        "audioUrl": "/audios/brot.mp3"
+                        "audioUrl": "/audios/brot.m4a"
                     },
                     {
                         "id": "ris",
                         "title": "Ris",
                         "imageUrl": "/ris.jpg",
-                        "audioUrl": "/audios/ris.mp3"
+                        "audioUrl": "/audios/ris.m4a"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
                         "imageUrl": "/pona.jpg",
-                        "audioUrl": "/audios/pona.mp3"
+                        "audioUrl": "/audios/pona.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "/brot.jpg",
-                "audioUrl": "/audios/pan.mp3",
+                "audioUrl": "/audios/brot.m4a",
                 "targetWord": "BROT",
                 "visibleCharacters": 1
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la fruta correcta",
-                "audioUrl": "/audios/fresa.mp3",
+                "audioUrl": "/audios/arpala.m4a",
                 "phoneticText": "'Arpala'",
                 "correctOptionId": "arpala",
                 "options": [
@@ -475,19 +475,19 @@
                         "id": "fisich",
                         "title": "Fisich",
                         "imageUrl": "/fisich.jpg",
-                        "audioUrl": "/audios/fisich.mp3"
+                        "audioUrl": "/audios/fisich.m4a"
                     },
                     {
                         "id": "compira",
                         "title": "Compira",
                         "imageUrl": "/compira.jpg",
-                        "audioUrl": "/audios/compira.mp3"
+                        "audioUrl": "/audios/compira.m4a"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
                         "imageUrl": "/monca.jpg",
-                        "audioUrl": "/audios/monca.mp3"
+                        "audioUrl": "/audios/monca.m4a"
                     }
                 ]
             },
@@ -502,19 +502,19 @@
                         "id": "arpala",
                         "title": "Arpala",
                         "imageUrl": "/arpala.jpg",
-                        "audioUrl": "/audios/arpala.mp3"
+                        "audioUrl": "/audios/arpala.m4a"
                     },
                     {
                         "id": "crumpera",
                         "title": "Crumpera",
                         "imageUrl": "/crumpera.jpg",
-                        "audioUrl": "/audios/crumpera.mp3"
+                        "audioUrl": "/audios/crumpera.m4a"
                     },
                     {
                         "id": "orosha",
                         "title": "Orosha",
                         "imageUrl": "/orosha.jpg",
-                        "audioUrl": "/audios/orosha.mp3"
+                        "audioUrl": "/audios/orosha.m4a"
                     }
                 ]
             },
@@ -528,24 +528,24 @@
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "audioUrl": "/audios/compira.mp3"
+                        "audioUrl": "/audios/compira.m4a"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "audioUrl": "/audios/jareplit.mp3"
+                        "audioUrl": "/audios/jareplit.m4a"
                     },
                     {
                         "id": "fiica",
                         "title": "Fiica",
-                        "audioUrl": "/audios/fiica.mp3"
+                        "audioUrl": "/audios/fiica.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la fruta correcta",
-                "audioUrl": "/audios/naranja.mp3",
+                "audioUrl": "/audios/naranja.m4a",
                 "phoneticText": "'Orosha'",
                 "correctOptionId": "orosha",
                 "options": [
@@ -576,24 +576,24 @@
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "audioUrl": "/audios/monca.mp3"
+                        "audioUrl": "/audios/monca.m4a"
                     },
                     {
                         "id": "eplif",
                         "title": "Eplif",
-                        "audioUrl": "/audios/eplif.mp3"
+                        "audioUrl": "/audios/eplif.m4a"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "audioUrl": "/audios/jareplit.mp3"
+                        "audioUrl": "/audios/jareplit.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "/arpala.jpg",
-                "audioUrl": "/audios/arpala.mp3",
+                "audioUrl": "/audios/arpala.m4a",
                 "targetWord": "Arpala",
                 "visibleCharacters": 2
             },
@@ -608,19 +608,19 @@
                         "id": "fiica",
                         "title": "Fiica",
                         "imageUrl": "/fiica.jpg",
-                        "audioUrl": "/audios/fiica.mp3"
+                        "audioUrl": "/audios/fiica.m4a"
                     },
                     {
                         "id": "compira",
                         "title": "Compira",
                         "imageUrl": "/compira.jpg",
-                        "audioUrl": "/audios/compira.mp3"
+                        "audioUrl": "/audios/compira.m4a"
                     },
                     {
                         "id": "arpala",
                         "title": "Arpala",
                         "imageUrl": "/arpala.jpg",
-                        "audioUrl": "/audios/arpala.mp3"
+                        "audioUrl": "/audios/arpala.m4a"
                     }
                 ]
             },
@@ -635,19 +635,19 @@
                         "id": "eplif",
                         "title": "Eplif",
                         "imageUrl": "/eplif.jpg",
-                        "audioUrl": "/audios/eplif.mp3"
+                        "audioUrl": "/audios/eplif.m4a"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
                         "imageUrl": "/monca.jpg",
-                        "audioUrl": "/audios/monca.mp3"
+                        "audioUrl": "/audios/monca.m4a"
                     },
                     {
                         "id": "orosha",
                         "title": "Orosha",
                         "imageUrl": "/orosha.jpg",
-                        "audioUrl": "/audios/orosha.mp3"
+                        "audioUrl": "/audios/orosha.m4a"
                     }
                 ]
             },
@@ -661,17 +661,17 @@
                     {
                         "id": "Fisich",
                         "title": "Fisich",
-                        "audioUrl": "/audios/Fisich.mp3"
+                        "audioUrl": "/audios/Fisich.m4a"
                     },
                     {
                         "id": "arpala",
                         "title": "Arpala",
-                        "audioUrl": "/audios/arpala.mp3"
+                        "audioUrl": "/audios/arpala.m4a"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "audioUrl": "/audios/pona.mp3"
+                        "audioUrl": "/audios/pona.m4a"
                     }
                 ]
             }
@@ -692,26 +692,26 @@
                         "id": "froid",
                         "title": "Froid",
                         "iconName": "heart",
-                        "audioUrl": "/audios/froid.mp3"
+                        "audioUrl": "/audios/froid.m4a"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
                         "iconName": "star",
-                        "audioUrl": "/audios/mon.mp3"
+                        "audioUrl": "/audios/mon.m4a"
                     },
                     {
                         "id": "old",
                         "title": "Old",
                         "iconName": "sun",
-                        "audioUrl": "/audios/old.mp3"
+                        "audioUrl": "/audios/old.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen para 'Luna'",
-                "audioUrl": "/audios/luna.mp3",
+                "audioUrl": "/audios/luna.m4a",
                 "phoneticText": "'Moon'",
                 "correctOptionId": "moon",
                 "options": [
@@ -743,19 +743,19 @@
                         "id": "maitili",
                         "title": "Maitili",
                         "iconName": "heart",
-                        "audioUrl": "/audios/maitili.mp3"
+                        "audioUrl": "/audios/maitili.m4a"
                     },
                     {
                         "id": "kingstag",
                         "title": "Kingstag",
                         "imageUrl": "/kingstag.jpg",
-                        "audioUrl": "/audios/kingstag.mp3"
+                        "audioUrl": "/audios/kingstag.m4a"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
                         "iconName": "sun",
-                        "audioUrl": "/audios/mon.mp3"
+                        "audioUrl": "/audios/mon.m4a"
                     }
                 ]
             },
@@ -770,26 +770,26 @@
                         "id": "maitili",
                         "title": "Maitili",
                         "iconName": "heart",
-                        "audioUrl": "/audios/maitili.mp3"
+                        "audioUrl": "/audios/maitili.m4a"
                     },
                     {
                         "id": "old",
                         "title": "Old",
                         "iconName": "star",
-                        "audioUrl": "/audios/old.mp3"
+                        "audioUrl": "/audios/old.m4a"
                     },
                     {
                         "id": "froid",
                         "title": "Froid",
                         "iconName": "sun",
-                        "audioUrl": "/audios/froid.mp3"
+                        "audioUrl": "/audios/froid.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=500",
-                "audioUrl": "/audios/carro.mp3",
+                "audioUrl": "/audios/carro.m4a",
                 "targetWord": "CORRA",
                 "visibleCharacters": 2
             },
@@ -804,19 +804,19 @@
                         "id": "orbat",
                         "title": "Orbat",
                         "iconName": "sun",
-                        "audioUrl": "/audios/orbat.mp3"
+                        "audioUrl": "/audios/orbat.m4a"
                     },
                     {
                         "id": "zoffa",
                         "title": "Zoffa",
                         "iconName": "star",
-                        "audioUrl": "/audios/zoffa.mp3"
+                        "audioUrl": "/audios/zoffa.m4a"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
                         "iconName": "heart",
-                        "audioUrl": "/audios/mon.mp3"
+                        "audioUrl": "/audios/mon.m4a"
                     }
                 ]
             },
@@ -831,19 +831,19 @@
                         "id": "old",
                         "title": "Old",
                         "iconName": "star",
-                        "audioUrl": "/audios/old.mp3"
+                        "audioUrl": "/audios/old.m4a"
                     },
                     {
                         "id": "froid",
                         "title": "Froid",
                         "iconName": "heart",
-                        "audioUrl": "/audios/froid.mp3"
+                        "audioUrl": "/audios/froid.m4a"
                     },
                     {
                         "id": "maitili",
                         "title": "Maitili",
                         "iconName": "sun",
-                        "audioUrl": "/audios/maitili.mp3"
+                        "audioUrl": "/audios/maitili.m4a"
                     }
                 ]
             },
@@ -858,19 +858,19 @@
                         "id": "froid",
                         "title": "Froid",
                         "iconName": "heart",
-                        "audioUrl": "/audios/froid.mp3"
+                        "audioUrl": "/audios/froid.m4a"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
                         "iconName": "star",
-                        "audioUrl": "/audios/mon.mp3"
+                        "audioUrl": "/audios/mon.m4a"
                     },
                     {
                         "id": "kingstag",
                         "title": "Kingstag",
                         "imageUrl": "/kingstag.jpg",
-                        "audioUrl": "/audios/kingstag.mp3"
+                        "audioUrl": "/audios/kingstag.m4a"
                     }
                 ]
             },
@@ -885,26 +885,26 @@
                         "id": "orbat",
                         "title": "Orbat",
                         "iconName": "star",
-                        "audioUrl": "/audios/orbat.mp3"
+                        "audioUrl": "/audios/orbat.m4a"
                     },
                     {
                         "id": "corra",
                         "title": "Corra",
                         "iconName": "sun",
-                        "audioUrl": "/audios/corra.mp3"
+                        "audioUrl": "/audios/corra.m4a"
                     },
                     {
                         "id": "shis",
                         "title": "Shis",
                         "iconName": "heart",
-                        "audioUrl": "/audios/shis.mp3"
+                        "audioUrl": "/audios/shis.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen para 'Casa'",
-                "audioUrl": "/audios/casa.mp3",
+                "audioUrl": "/audios/casa.m4a",
                 "phoneticText": "'Shis'",
                 "correctOptionId": "shis",
                 "options": [
@@ -936,19 +936,19 @@
                         "id": "corra",
                         "title": "Corra",
                         "iconName": "sun",
-                        "audioUrl": "/audios/corra.mp3"
+                        "audioUrl": "/audios/corra.m4a"
                     },
                     {
                         "id": "ruodt",
                         "title": "Ruodt",
                         "iconName": "star",
-                        "audioUrl": "/audios/ruodt.mp3"
+                        "audioUrl": "/audios/ruodt.m4a"
                     },
                     {
                         "id": "shis",
                         "title": "Shis",
                         "iconName": "heart",
-                        "audioUrl": "/audios/shis.mp3"
+                        "audioUrl": "/audios/shis.m4a"
                     }
                 ]
             }
@@ -969,26 +969,26 @@
                         "id": "junts",
                         "title": "Junts",
                         "iconName": "heart",
-                        "audioUrl": "/audios/junts.mp3"
+                        "audioUrl": "/audios/junts.m4a"
                     },
                     {
                         "id": "costs",
                         "title": "Costs",
                         "iconName": "star",
-                        "audioUrl": "/audios/costs.mp3"
+                        "audioUrl": "/audios/costs.m4a"
                     },
                     {
                         "id": "rot",
                         "title": "Rot",
                         "iconName": "sun",
-                        "audioUrl": "/audios/rot.mp3"
+                        "audioUrl": "/audios/rot.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen del animal ('Caballo')",
-                "audioUrl": "/audios/caballo.mp3",
+                "audioUrl": "/audios/caballo.m4a",
                 "phoneticText": "'Ros'",
                 "correctOptionId": "ros",
                 "options": [
@@ -1012,7 +1012,7 @@
             {
                 "type": "completeWord",
                 "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=500",
-                "audioUrl": "/audios/perro.mp3",
+                "audioUrl": "/audios/perro.m4a",
                 "targetWord": "JUNTS",
                 "visibleCharacters": 2
             },
@@ -1027,19 +1027,19 @@
                         "id": "rot",
                         "title": "Rot",
                         "iconName": "star",
-                        "audioUrl": "/audios/rot.mp3"
+                        "audioUrl": "/audios/rot.m4a"
                     },
                     {
                         "id": "ros",
                         "title": "Ros",
                         "iconName": "sun",
-                        "audioUrl": "/audios/ros.mp3"
+                        "audioUrl": "/audios/ros.m4a"
                     },
                     {
                         "id": "costs",
                         "title": "Costs",
                         "iconName": "heart",
-                        "audioUrl": "/audios/costs.mp3"
+                        "audioUrl": "/audios/costs.m4a"
                     }
                 ]
             }
@@ -1060,19 +1060,19 @@
                         "id": "bis",
                         "title": "Bis",
                         "iconName": "star",
-                        "audioUrl": "/audios/bis.mp3"
+                        "audioUrl": "/audios/bis.m4a"
                     },
                     {
                         "id": "chuots",
                         "title": "Chuots",
                         "iconName": "moon",
-                        "audioUrl": "/audios/chuots.mp3"
+                        "audioUrl": "/audios/chuots.m4a"
                     },
                     {
                         "id": "ploy",
                         "title": "Ploy",
                         "iconName": "sun",
-                        "audioUrl": "/audios/ploy.mp3"
+                        "audioUrl": "/audios/ploy.m4a"
                     }
                 ]
             },
@@ -1087,26 +1087,26 @@
                         "id": "root",
                         "title": "Root",
                         "iconName": "heart",
-                        "audioUrl": "/audios/root.mp3"
+                        "audioUrl": "/audios/root.m4a"
                     },
                     {
                         "id": "ploy",
                         "title": "Ploy",
                         "iconName": "star",
-                        "audioUrl": "/audios/ploy.mp3"
+                        "audioUrl": "/audios/ploy.m4a"
                     },
                     {
                         "id": "criant",
                         "title": "Criant",
                         "iconName": "sun",
-                        "audioUrl": "/audios/criant.mp3"
+                        "audioUrl": "/audios/criant.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona el color correcto ('Rojo')",
-                "audioUrl": "/audios/rojo.mp3",
+                "audioUrl": "/audios/rojo.m4a",
                 "phoneticText": "'Root'",
                 "correctOptionId": "root",
                 "options": [
@@ -1138,19 +1138,19 @@
                         "id": "call",
                         "title": "Call",
                         "iconName": "sun",
-                        "audioUrl": "/audios/call.mp3"
+                        "audioUrl": "/audios/call.m4a"
                     },
                     {
                         "id": "jalrat",
                         "title": "Jalrat",
                         "iconName": "heart",
-                        "audioUrl": "/audios/jalrat.mp3"
+                        "audioUrl": "/audios/jalrat.m4a"
                     },
                     {
                         "id": "orosig",
                         "title": "Orosig",
                         "iconName": "star",
-                        "audioUrl": "/audios/orosig.mp3"
+                        "audioUrl": "/audios/orosig.m4a"
                     }
                 ]
             },
@@ -1165,26 +1165,26 @@
                         "id": "ploy",
                         "title": "Ploy",
                         "iconName": "star",
-                        "audioUrl": "/audios/ploy.mp3"
+                        "audioUrl": "/audios/ploy.m4a"
                     },
                     {
                         "id": "criant",
                         "title": "Criant",
                         "iconName": "sun",
-                        "audioUrl": "/audios/criant.mp3"
+                        "audioUrl": "/audios/criant.m4a"
                     },
                     {
                         "id": "prun",
                         "title": "Prun",
                         "iconName": "heart",
-                        "audioUrl": "/audios/prun.mp3"
+                        "audioUrl": "/audios/prun.m4a"
                     }
                 ]
             },
             {
                 "type": "completeWord",
                 "imageUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=Pink",
-                "audioUrl": "/audios/rosado.mp3",
+                "audioUrl": "/audios/rosado.m4a",
                 "targetWord": "JALRAT",
                 "visibleCharacters": 2
             },
@@ -1199,19 +1199,19 @@
                         "id": "bis",
                         "title": "Bis",
                         "iconName": "sun",
-                        "audioUrl": "/audios/bis.mp3"
+                        "audioUrl": "/audios/bis.m4a"
                     },
                     {
                         "id": "chuots",
                         "title": "Chuots",
                         "iconName": "moon",
-                        "audioUrl": "/audios/chuots.mp3"
+                        "audioUrl": "/audios/chuots.m4a"
                     },
                     {
                         "id": "ashik",
                         "title": "Ashik",
                         "iconName": "star",
-                        "audioUrl": "/audios/ashik.mp3"
+                        "audioUrl": "/audios/ashik.m4a"
                     }
                 ]
             },
@@ -1226,19 +1226,19 @@
                         "id": "ashik",
                         "title": "Ashik",
                         "iconName": "star",
-                        "audioUrl": "/audios/ashik.mp3"
+                        "audioUrl": "/audios/ashik.m4a"
                     },
                     {
                         "id": "chuots",
                         "title": "Chuots",
                         "iconName": "moon",
-                        "audioUrl": "/audios/chuots.mp3"
+                        "audioUrl": "/audios/chuots.m4a"
                     },
                     {
                         "id": "jal_prun",
                         "title": "Jal Prun",
                         "iconName": "sun",
-                        "audioUrl": "/audios/jal_prun.mp3"
+                        "audioUrl": "/audios/jal_prun.m4a"
                     }
                 ]
             },
@@ -1253,19 +1253,19 @@
                         "id": "ploy",
                         "title": "Ploy",
                         "iconName": "star",
-                        "audioUrl": "/audios/ploy.mp3"
+                        "audioUrl": "/audios/ploy.m4a"
                     },
                     {
                         "id": "schuortz_ploi",
                         "title": "Schuortz ploi",
                         "iconName": "moon",
-                        "audioUrl": "/audios/schuortz_ploi.mp3"
+                        "audioUrl": "/audios/schuortz_ploi.m4a"
                     },
                     {
                         "id": "ashik",
                         "title": "Ashik",
                         "iconName": "sun",
-                        "audioUrl": "/audios/ashik.mp3"
+                        "audioUrl": "/audios/ashik.m4a"
                     }
                 ]
             },
@@ -1280,19 +1280,19 @@
                         "id": "prun",
                         "title": "Prun",
                         "iconName": "star",
-                        "audioUrl": "/audios/prun.mp3"
+                        "audioUrl": "/audios/prun.m4a"
                     },
                     {
                         "id": "jal_prun",
                         "title": "Jal Prun",
                         "iconName": "sun",
-                        "audioUrl": "/audios/jal_prun.mp3"
+                        "audioUrl": "/audios/jal_prun.m4a"
                     },
                     {
                         "id": "root",
                         "title": "Root",
                         "iconName": "heart",
-                        "audioUrl": "/audios/root.mp3"
+                        "audioUrl": "/audios/root.m4a"
                     }
                 ]
             },
@@ -1307,19 +1307,19 @@
                         "id": "call",
                         "title": "Call",
                         "iconName": "sun",
-                        "audioUrl": "/audios/call.mp3"
+                        "audioUrl": "/audios/call.m4a"
                     },
                     {
                         "id": "orosig",
                         "title": "Orosig",
                         "iconName": "star",
-                        "audioUrl": "/audios/orosig.mp3"
+                        "audioUrl": "/audios/orosig.m4a"
                     },
                     {
                         "id": "jalrat",
                         "title": "Jalrat",
                         "iconName": "heart",
-                        "audioUrl": "/audios/jalrat.mp3"
+                        "audioUrl": "/audios/jalrat.m4a"
                     }
                 ]
             },
@@ -1334,19 +1334,19 @@
                         "id": "prun",
                         "title": "Prun",
                         "iconName": "star",
-                        "audioUrl": "/audios/prun.mp3"
+                        "audioUrl": "/audios/prun.m4a"
                     },
                     {
                         "id": "jal_prun",
                         "title": "Jal Prun",
                         "iconName": "sun",
-                        "audioUrl": "/audios/jal_prun.mp3"
+                        "audioUrl": "/audios/jal_prun.m4a"
                     },
                     {
                         "id": "bis",
                         "title": "Bis",
                         "iconName": "moon",
-                        "audioUrl": "/audios/bis.mp3"
+                        "audioUrl": "/audios/bis.m4a"
                     }
                 ]
             }
