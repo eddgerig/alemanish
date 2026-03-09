@@ -71,7 +71,21 @@ export const LessonFlow: React.FC = () => {
             isCorrect = selectedValue?.toUpperCase() === currentLessonData.targetWord.toUpperCase();
         }
 
-        setCheckStatus(isCorrect ? 'correct' : 'incorrect');
+        if (isCorrect) {
+            try {
+                new Audio('/audios/correct.mp3').play();
+            } catch (e) {
+                console.error('Audio error:', e);
+            }
+            setCheckStatus('correct');
+        } else {
+            try {
+                new Audio('/audios/incorrect.mp3').play();
+            } catch (e) {
+                console.error('Audio error:', e);
+            }
+            setCheckStatus('incorrect');
+        }
     };
 
     const handleOptionSelected = (value: string | null) => {

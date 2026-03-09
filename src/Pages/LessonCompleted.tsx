@@ -19,6 +19,14 @@ export const LessonCompleted: React.FC = () => {
     useEffect(() => {
         const handleResize = () => setDimensions({ width: window.innerWidth, height: window.innerHeight });
         window.addEventListener('resize', handleResize);
+
+        // Play tada sound
+        try {
+            new Audio('/audios/tada.mp3').play();
+        } catch (e) {
+            console.error('Failed to play tada audio:', e);
+        }
+
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 

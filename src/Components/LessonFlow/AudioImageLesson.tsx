@@ -17,8 +17,11 @@ export const AudioImageLesson: React.FC<AudioImageLessonProps> = ({ data, onOpti
     };
 
     const handlePlayAudio = () => {
-        console.log("Play audio clicked");
-        // Implement audio playback here
+        try {
+            new Audio(data.audioUrl).play();
+        } catch (e) {
+            console.error('Failed to play audio:', e);
+        }
     };
 
     return (
@@ -36,10 +39,7 @@ export const AudioImageLesson: React.FC<AudioImageLessonProps> = ({ data, onOpti
                 >
                     <VolumeUpIcon /> Reproducir Audio
                 </button>
-                <div className="text-center mt-2">
-                    <p className="text-sm text-slate-400 italic font-medium">Traducción fonética:</p>
-                    <p className="text-lg text-orange-400 font-bold">{data.phoneticText}</p>
-                </div>
+
             </div>
 
             {/* Options Grid */}

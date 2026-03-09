@@ -1,8 +1,10 @@
 export interface TranslationOption {
     id: string;
     title: string;
-    subtitle: string;
-    iconName: string;
+    subtitle?: string;
+    iconName?: string;
+    imageUrl?: string;
+    audioUrl?: string;
 }
 
 export interface TranslationLessonData {

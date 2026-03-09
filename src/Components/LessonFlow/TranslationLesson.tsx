@@ -44,7 +44,9 @@ export const TranslationLesson: React.FC<TranslationLessonProps> = ({ data, onOp
                         id={option.id}
                         title={option.title}
                         subtitle={option.subtitle}
-                        icon={renderIcon(option.iconName)}
+                        icon={option.iconName ? renderIcon(option.iconName) : undefined}
+                        imageUrl={option.imageUrl}
+                        audioUrl={option.audioUrl}
                         isSelected={selectedOption === option.id}
                         onClick={handleOptionSelect}
                     />

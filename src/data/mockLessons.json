@@ -13,39 +13,39 @@
                     {
                         "id": "foter",
                         "title": "Foter",
-                        "subtitle": "Papá",
-                        "iconName": "sun"
+                        "imageUrl": "/foter.jpg",
+                        "audioUrl": "/audios/foter.m4a"
                     },
                     {
                         "id": "muater",
                         "title": "Muater",
-                        "subtitle": "Mamá",
-                        "iconName": "heart"
+                        "imageUrl": "/muater.jpg",
+                        "audioUrl": "/audios/muater.m4a"
                     },
                     {
                         "id": "kingstag",
                         "title": "Kingstag",
-                        "subtitle": "Niño",
-                        "iconName": "star"
+                        "imageUrl": "/kingstag.jpg",
+                        "audioUrl": "/audios/kingstag.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
                 "instruction": "Escucha y selecciona la imagen correcta para 'Papá'",
-                "audioUrl": "/audios/foter.mp3",
-                "phoneticText": "'Foter'",
+                "audioUrl": "/audios/foter.m4a",
+                "phoneticText": "",
                 "correctOptionId": "foter",
                 "options": [
                     {
                         "id": "muater",
                         "title": "Muater",
-                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Muater"
+                        "imageUrl": "/muater.jpg"
                     },
                     {
                         "id": "foter",
                         "title": "Foter",
-                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Foter"
+                        "imageUrl": "/foter.jpg"
                     },
                     {
                         "id": "maitili",
@@ -70,20 +70,20 @@
                     {
                         "id": "otie",
                         "title": "Otie",
-                        "subtitle": "Hasta luego",
-                        "iconName": "hand"
+                        "iconName": "hand",
+                        "audioUrl": "/audios/otie.mp3"
                     },
                     {
                         "id": "cuata_morka",
                         "title": "Cuata Morka",
-                        "subtitle": "Buenos Dias",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/cuata_morka.mp3"
                     },
                     {
                         "id": "kjuma_cuat",
                         "title": "Kjuma Cuat",
-                        "subtitle": "Bienvenido",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/kjuma_cuat.mp3"
                     }
                 ]
             },
@@ -97,20 +97,20 @@
                     {
                         "id": "cuata_zowa",
                         "title": "Cuata Zowa",
-                        "subtitle": "Buenas Tardes",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/cuata_zowa.mp3"
                     },
                     {
                         "id": "cuata_nojt",
                         "title": "Cuata Nojt",
-                        "subtitle": "Buenas Noches",
-                        "iconName": "moon"
+                        "iconName": "moon",
+                        "audioUrl": "/audios/cuata_nojt.mp3"
                     },
                     {
                         "id": "cuata_morka",
                         "title": "Cuata Morka",
-                        "subtitle": "Buenos Dias",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/cuata_morka.mp3"
                     }
                 ]
             },
@@ -131,20 +131,20 @@
                     {
                         "id": "cuata_zowa",
                         "title": "Cuata Zowa",
-                        "subtitle": "Buenas Tardes",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/cuata_zowa.mp3"
                     },
                     {
                         "id": "tonk_schen",
                         "title": "Tonk Schen",
-                        "subtitle": "Muchas Gracias",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/tonk_schen.mp3"
                     },
                     {
                         "id": "otie",
                         "title": "Otie",
-                        "subtitle": "Hasta luego",
-                        "iconName": "hand"
+                        "iconName": "hand",
+                        "audioUrl": "/audios/otie.mp3"
                     }
                 ]
             },
@@ -182,20 +182,20 @@
                     {
                         "id": "tonk_schen",
                         "title": "Tonk Schen",
-                        "subtitle": "Muchas Gracias",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/tonk_schen.mp3"
                     },
                     {
                         "id": "cuata_morka",
                         "title": "Cuata Morka",
-                        "subtitle": "Buenos Dias",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/cuata_morka.mp3"
                     },
                     {
                         "id": "otie",
                         "title": "Otie",
-                        "subtitle": "Hasta luego",
-                        "iconName": "hand"
+                        "iconName": "hand",
+                        "audioUrl": "/audios/otie.mp3"
                     }
                 ]
             }
@@ -215,20 +215,20 @@
                     {
                         "id": "ris",
                         "title": "Ris",
-                        "subtitle": "Arroz",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ris.mp3"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "subtitle": "Caraotas",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/pona.mp3"
                     },
                     {
                         "id": "brot",
                         "title": "Brot",
-                        "subtitle": "Pan",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/brot.mp3"
                     }
                 ]
             },
@@ -242,20 +242,20 @@
                     {
                         "id": "brot",
                         "title": "Brot",
-                        "subtitle": "Pan",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/brot.mp3"
                     },
                     {
                         "id": "ris",
                         "title": "Ris",
-                        "subtitle": "Arroz",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/ris.mp3"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "subtitle": "Caraotas",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/pona.mp3"
                     }
                 ]
             },
@@ -300,20 +300,20 @@
                     {
                         "id": "fisich",
                         "title": "Fisich",
-                        "subtitle": "Durazno",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/fisich.mp3"
                     },
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "subtitle": "Cambur",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/compira.mp3"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "subtitle": "Mango",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/monca.mp3"
                     }
                 ]
             },
@@ -327,20 +327,20 @@
                     {
                         "id": "arpala",
                         "title": "Arpala",
-                        "subtitle": "Fresa",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/arpala.mp3"
                     },
                     {
                         "id": "crumpera",
                         "title": "Crumpera",
-                        "subtitle": "Mora",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/crumpera.mp3"
                     },
                     {
                         "id": "orosha",
                         "title": "Orosha",
-                        "subtitle": "Naranja",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/orosha.mp3"
                     }
                 ]
             },
@@ -354,20 +354,20 @@
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "subtitle": "Cambur",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/compira.mp3"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "subtitle": "Papa",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/jareplit.mp3"
                     },
                     {
                         "id": "fiica",
                         "title": "Fiica",
-                        "subtitle": "Higo",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/fiica.mp3"
                     }
                 ]
             },
@@ -405,20 +405,20 @@
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "subtitle": "Mango",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/monca.mp3"
                     },
                     {
                         "id": "eplif",
                         "title": "Eplif",
-                        "subtitle": "Manzana",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/eplif.mp3"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "subtitle": "Papa",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/jareplit.mp3"
                     }
                 ]
             },
@@ -439,20 +439,20 @@
                     {
                         "id": "fiica",
                         "title": "Fiica",
-                        "subtitle": "Higo",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/fiica.mp3"
                     },
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "subtitle": "Cambur",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/compira.mp3"
                     },
                     {
                         "id": "arpala",
                         "title": "Arpala",
-                        "subtitle": "Fresa",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/arpala.mp3"
                     }
                 ]
             },
@@ -466,20 +466,20 @@
                     {
                         "id": "eplif",
                         "title": "Eplif",
-                        "subtitle": "Manzana",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/eplif.mp3"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "subtitle": "Mango",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/monca.mp3"
                     },
                     {
                         "id": "orosha",
                         "title": "Orosha",
-                        "subtitle": "Naranja",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/orosha.mp3"
                     }
                 ]
             },
@@ -493,20 +493,20 @@
                     {
                         "id": "ris",
                         "title": "Ris",
-                        "subtitle": "Arroz",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/ris.mp3"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "subtitle": "Papa",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/jareplit.mp3"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "subtitle": "Caraotas",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/pona.mp3"
                     }
                 ]
             }
@@ -526,20 +526,20 @@
                     {
                         "id": "froid",
                         "title": "Froid",
-                        "subtitle": "Señora",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/froid.mp3"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
-                        "subtitle": "Hombre",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/mon.mp3"
                     },
                     {
                         "id": "old",
                         "title": "Old",
-                        "subtitle": "Vieja",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/old.mp3"
                     }
                 ]
             },
@@ -577,20 +577,20 @@
                     {
                         "id": "maitili",
                         "title": "Maitili",
-                        "subtitle": "Niña",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/maitili.mp3"
                     },
                     {
                         "id": "kingstag",
                         "title": "Kingstag",
-                        "subtitle": "Niño",
-                        "iconName": "star"
+                        "imageUrl": "/kingstag.jpg",
+                        "audioUrl": "/audios/kingstag.mp3"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
-                        "subtitle": "Hombre",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/mon.mp3"
                     }
                 ]
             },
@@ -604,20 +604,20 @@
                     {
                         "id": "maitili",
                         "title": "Maitili",
-                        "subtitle": "Niña",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/maitili.mp3"
                     },
                     {
                         "id": "old",
                         "title": "Old",
-                        "subtitle": "Vieja",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/old.mp3"
                     },
                     {
                         "id": "froid",
                         "title": "Froid",
-                        "subtitle": "Señora",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/froid.mp3"
                     }
                 ]
             },
@@ -638,20 +638,20 @@
                     {
                         "id": "orbat",
                         "title": "Orbat",
-                        "subtitle": "Trabajo",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/orbat.mp3"
                     },
                     {
                         "id": "zoffa",
                         "title": "Zoffa",
-                        "subtitle": "Borracho",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/zoffa.mp3"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
-                        "subtitle": "Hombre",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/mon.mp3"
                     }
                 ]
             },
@@ -665,20 +665,20 @@
                     {
                         "id": "old",
                         "title": "Old",
-                        "subtitle": "Vieja",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/old.mp3"
                     },
                     {
                         "id": "froid",
                         "title": "Froid",
-                        "subtitle": "Señora",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/froid.mp3"
                     },
                     {
                         "id": "maitili",
                         "title": "Maitili",
-                        "subtitle": "Niña",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/maitili.mp3"
                     }
                 ]
             },
@@ -692,20 +692,20 @@
                     {
                         "id": "froid",
                         "title": "Froid",
-                        "subtitle": "Señora",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/froid.mp3"
                     },
                     {
                         "id": "mon",
                         "title": "Mon",
-                        "subtitle": "Hombre",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/mon.mp3"
                     },
                     {
                         "id": "kingstag",
                         "title": "Kingstag",
-                        "subtitle": "Niño",
-                        "iconName": "sun"
+                        "imageUrl": "/kingstag.jpg",
+                        "audioUrl": "/audios/kingstag.mp3"
                     }
                 ]
             },
@@ -719,20 +719,20 @@
                     {
                         "id": "orbat",
                         "title": "Orbat",
-                        "subtitle": "Trabajo",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/orbat.mp3"
                     },
                     {
                         "id": "corra",
                         "title": "Corra",
-                        "subtitle": "Carro",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/corra.mp3"
                     },
                     {
                         "id": "shis",
                         "title": "Shis",
-                        "subtitle": "Casa",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/shis.mp3"
                     }
                 ]
             },
@@ -770,20 +770,20 @@
                     {
                         "id": "corra",
                         "title": "Corra",
-                        "subtitle": "Carro",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/corra.mp3"
                     },
                     {
                         "id": "ruodt",
                         "title": "Ruodt",
-                        "subtitle": "Rueda",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ruodt.mp3"
                     },
                     {
                         "id": "shis",
                         "title": "Shis",
-                        "subtitle": "Casa",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/shis.mp3"
                     }
                 ]
             }
@@ -803,20 +803,20 @@
                     {
                         "id": "junts",
                         "title": "Junts",
-                        "subtitle": "Perro",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/junts.mp3"
                     },
                     {
                         "id": "costs",
                         "title": "Costs",
-                        "subtitle": "Gato",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/costs.mp3"
                     },
                     {
                         "id": "rot",
                         "title": "Rot",
-                        "subtitle": "Raton",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/rot.mp3"
                     }
                 ]
             },
@@ -861,20 +861,20 @@
                     {
                         "id": "rot",
                         "title": "Rot",
-                        "subtitle": "Raton",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/rot.mp3"
                     },
                     {
                         "id": "ros",
                         "title": "Ros",
-                        "subtitle": "Caballo",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/ros.mp3"
                     },
                     {
                         "id": "costs",
                         "title": "Costs",
-                        "subtitle": "Gato",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/costs.mp3"
                     }
                 ]
             }
@@ -894,20 +894,20 @@
                     {
                         "id": "bis",
                         "title": "Bis",
-                        "subtitle": "Blanco",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/bis.mp3"
                     },
                     {
                         "id": "chuots",
                         "title": "Chuots",
-                        "subtitle": "Negro",
-                        "iconName": "moon"
+                        "iconName": "moon",
+                        "audioUrl": "/audios/chuots.mp3"
                     },
                     {
                         "id": "ploy",
                         "title": "Ploy",
-                        "subtitle": "Azul",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/ploy.mp3"
                     }
                 ]
             },
@@ -921,20 +921,20 @@
                     {
                         "id": "root",
                         "title": "Root",
-                        "subtitle": "Rojo",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/root.mp3"
                     },
                     {
                         "id": "ploy",
                         "title": "Ploy",
-                        "subtitle": "Azul",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ploy.mp3"
                     },
                     {
                         "id": "criant",
                         "title": "Criant",
-                        "subtitle": "Verde",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/criant.mp3"
                     }
                 ]
             },
@@ -972,20 +972,20 @@
                     {
                         "id": "call",
                         "title": "Call",
-                        "subtitle": "Amarillo",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/call.mp3"
                     },
                     {
                         "id": "jalrat",
                         "title": "Jalrat",
-                        "subtitle": "Rosado",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/jalrat.mp3"
                     },
                     {
                         "id": "orosig",
                         "title": "Orosig",
-                        "subtitle": "Naranja",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/orosig.mp3"
                     }
                 ]
             },
@@ -999,20 +999,20 @@
                     {
                         "id": "ploy",
                         "title": "Ploy",
-                        "subtitle": "Azul",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ploy.mp3"
                     },
                     {
                         "id": "criant",
                         "title": "Criant",
-                        "subtitle": "Verde",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/criant.mp3"
                     },
                     {
                         "id": "prun",
                         "title": "Prun",
-                        "subtitle": "Marron",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/prun.mp3"
                     }
                 ]
             },
@@ -1033,20 +1033,20 @@
                     {
                         "id": "bis",
                         "title": "Bis",
-                        "subtitle": "Blanco",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/bis.mp3"
                     },
                     {
                         "id": "chuots",
                         "title": "Chuots",
-                        "subtitle": "Negro",
-                        "iconName": "moon"
+                        "iconName": "moon",
+                        "audioUrl": "/audios/chuots.mp3"
                     },
                     {
                         "id": "ashik",
                         "title": "Ashik",
-                        "subtitle": "Gris",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ashik.mp3"
                     }
                 ]
             },
@@ -1060,20 +1060,20 @@
                     {
                         "id": "ashik",
                         "title": "Ashik",
-                        "subtitle": "Gris",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ashik.mp3"
                     },
                     {
                         "id": "chuots",
                         "title": "Chuots",
-                        "subtitle": "Negro",
-                        "iconName": "moon"
+                        "iconName": "moon",
+                        "audioUrl": "/audios/chuots.mp3"
                     },
                     {
                         "id": "jal_prun",
                         "title": "Jal Prun",
-                        "subtitle": "Beige",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/jal_prun.mp3"
                     }
                 ]
             },
@@ -1087,20 +1087,20 @@
                     {
                         "id": "ploy",
                         "title": "Ploy",
-                        "subtitle": "Azul",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/ploy.mp3"
                     },
                     {
                         "id": "schuortz_ploi",
                         "title": "Schuortz ploi",
-                        "subtitle": "Azul Oscuro",
-                        "iconName": "moon"
+                        "iconName": "moon",
+                        "audioUrl": "/audios/schuortz_ploi.mp3"
                     },
                     {
                         "id": "ashik",
                         "title": "Ashik",
-                        "subtitle": "Gris",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/ashik.mp3"
                     }
                 ]
             },
@@ -1114,20 +1114,20 @@
                     {
                         "id": "prun",
                         "title": "Prun",
-                        "subtitle": "Marron",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/prun.mp3"
                     },
                     {
                         "id": "jal_prun",
                         "title": "Jal Prun",
-                        "subtitle": "Beige",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/jal_prun.mp3"
                     },
                     {
                         "id": "root",
                         "title": "Root",
-                        "subtitle": "Rojo",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/root.mp3"
                     }
                 ]
             },
@@ -1141,20 +1141,20 @@
                     {
                         "id": "call",
                         "title": "Call",
-                        "subtitle": "Amarillo",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/call.mp3"
                     },
                     {
                         "id": "orosig",
                         "title": "Orosig",
-                        "subtitle": "Naranja",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/orosig.mp3"
                     },
                     {
                         "id": "jalrat",
                         "title": "Jalrat",
-                        "subtitle": "Rosado",
-                        "iconName": "heart"
+                        "iconName": "heart",
+                        "audioUrl": "/audios/jalrat.mp3"
                     }
                 ]
             },
@@ -1168,20 +1168,20 @@
                     {
                         "id": "prun",
                         "title": "Prun",
-                        "subtitle": "Marron",
-                        "iconName": "star"
+                        "iconName": "star",
+                        "audioUrl": "/audios/prun.mp3"
                     },
                     {
                         "id": "jal_prun",
                         "title": "Jal Prun",
-                        "subtitle": "Beige",
-                        "iconName": "sun"
+                        "iconName": "sun",
+                        "audioUrl": "/audios/jal_prun.mp3"
                     },
                     {
                         "id": "bis",
                         "title": "Bis",
-                        "subtitle": "Blanco",
-                        "iconName": "moon"
+                        "iconName": "moon",
+                        "audioUrl": "/audios/bis.mp3"
                     }
                 ]
             }
