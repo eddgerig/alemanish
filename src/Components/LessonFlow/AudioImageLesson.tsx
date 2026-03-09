@@ -27,7 +27,7 @@ export const AudioImageLesson: React.FC<AudioImageLessonProps> = ({ data, onOpti
     return (
         <div className="flex-1 flex flex-col items-center justify-start px-4 w-full mt-10 mb-20 gap-8">
             {/* Instruction Title */}
-            <h2 className="text-2xl font-extrabold text-slate-800 text-center drop-shadow-sm">
+            <h2 className="text-2xl font-extrabold text-white text-center drop-shadow-sm">
                 {data.instruction}
             </h2>
 

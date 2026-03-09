@@ -32,7 +32,7 @@ export const TranslationLesson: React.FC<TranslationLessonProps> = ({ data, onOp
     return (
         <div className="flex-1 flex flex-col items-center justify-center px-4 w-full mt-10 mb-20">
             {/* Question */}
-            <h2 className="text-3xl font-extrabold text-slate-800 mb-12 text-center drop-shadow-sm">
+            <h2 className="text-3xl font-extrabold text-white mb-12 text-center drop-shadow-sm">
                 {data.questionPrefix} <span className="text-orange-400">{data.highlightedWord}</span>{data.questionSuffix}
             </h2>
 

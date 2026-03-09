@@ -8,12 +8,14 @@ import { CompleteWordLesson } from '../Components/LessonFlow/CompleteWordLesson'
 import mockLessonsData from '../data/mockLessons.json';
 import type { LessonModule } from '../types/lesson';
 import { useNavigate, useParams } from 'react-router-dom';
+import { useUser } from '../context/UserContext';
 
 const modulesArray = mockLessonsData as LessonModule[];
 
 export const LessonFlow: React.FC = () => {
     const navigate = useNavigate();
     const { moduleId } = useParams<{ moduleId: string }>();
+    const { addFresas } = useUser();
 
     // Load dynamic module from URL
     const currentModule = modulesArray.find(m => m.moduleId === moduleId) || modulesArray[0];
@@ -22,6 +24,8 @@ export const LessonFlow: React.FC = () => {
     const [canCheck, setCanCheck] = useState<boolean>(false);
     const [selectedValue, setSelectedValue] = useState<string | null>(null);
     const [checkStatus, setCheckStatus] = useState<'idle' | 'correct' | 'incorrect'>('idle');
+    const [correctCount, setCorrectCount] = useState(0);
+    const [incorrectCount, setIncorrectCount] = useState(0);
 
     // Get the current lesson based on index
     const currentLessonData = moduleLessons[lessonIndex];
@@ -43,7 +47,15 @@ export const LessonFlow: React.FC = () => {
                 }
             }
 
-            navigate('/completed', { state: { unlockedModuleTitle } });
+            const calculatedFresas = (correctCount * 20) - (incorrectCount * 10);
+            const totalFresas = Math.max(0, calculatedFresas);
+
+            // Add earned fresas to global state
+            if (totalFresas > 0) {
+                addFresas(totalFresas);
+            }
+
+            navigate('/completed', { state: { unlockedModuleTitle, correctCount, incorrectCount, moduleId: currentModule.moduleId } });
             return;
         }
 
@@ -78,6 +90,7 @@ export const LessonFlow: React.FC = () => {
                 console.error('Audio error:', e);
             }
             setCheckStatus('correct');
+            setCorrectCount(prev => prev + 1);
         } else {
             try {
                 new Audio('/audios/incorrect.mp3').play();
@@ -85,6 +98,7 @@ export const LessonFlow: React.FC = () => {
                 console.error('Audio error:', e);
             }
             setCheckStatus('incorrect');
+            setIncorrectCount(prev => prev + 1);
         }
     };
 
@@ -97,8 +111,19 @@ export const LessonFlow: React.FC = () => {
     const progressPercentage = Math.round((lessonIndex / moduleLessons.length) * 100);
 
     return (
-        <div className="min-h-screen bg-[#E5E9F0] flex flex-col font-sans">
-            <div className="max-w-4xl mx-auto w-full flex-1 flex flex-col pb-24">
+        <div className="min-h-screen bg-black flex flex-col font-sans relative overflow-x-hidden">
+            {/* Background Image Layer */}
+            <div className="fixed inset-0 z-0 pointer-events-none bg-black overflow-hidden">
+                <img
+                    src="/ColoniaTovar_Background.jpg"
+                    alt="Background Colonia Tovar"
+                    className="w-full h-full object-cover opacity-70 blur-sm scale-105"
+                />
+            </div>
+            {/* Overlay Gradient to ensure text readability */}
+            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-black/20 via-black/40 to-black/95"></div>
+
+            <div className="max-w-4xl mx-auto w-full flex-1 flex flex-col pb-24 z-10 relative">
                 {/* Header Section */}
                 <LessonHeader />
                 <ProgressBar title={currentModule.title} percentage={progressPercentage} />

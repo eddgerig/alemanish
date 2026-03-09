@@ -7,8 +7,13 @@ export const LessonCompleted: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // Get unlocked module title from route state (if any)
     const unlockedModuleTitle = location.state?.unlockedModuleTitle;
+    const correctCount = location.state?.correctCount || 0;
+    const incorrectCount = location.state?.incorrectCount || 0;
+
+    const calculatedFresas = (correctCount * 20) - (incorrectCount * 10);
+    const totalFresas = Math.max(0, calculatedFresas);
+    const displayFresas = totalFresas > 0 ? `+${totalFresas}` : "0";
 
     // Track window dimensions for the confetti
     const [dimensions, setDimensions] = useState({
@@ -70,20 +75,41 @@ export const LessonCompleted: React.FC = () => {
                 </p>
 
                 {/* Stats Grid */}
-                <div className="flex justify-center w-full mb-6">
-                    <div className="bg-white rounded-2xl p-5 flex flex-col items-center justify-center shadow-sm border border-gray-100 min-w-[220px]">
+                <div className="flex flex-col md:flex-row justify-center w-full gap-4 mb-10 text-center">
+                    {/* Fresas Totales */}
+                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center shadow-sm border border-gray-100 flex-1 min-w-[140px]">
                         <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
-                            Fresas Recolectadas
+                            Fresas Totales
                         </p>
-                        <div className="flex items-center text-red-500 font-extrabold text-2xl md:text-3xl">
+                        <div className={`flex items-center font-extrabold text-2xl md:text-3xl ${totalFresas > 0 ? 'text-green-500' : 'text-slate-500'}`}>
                             <span role="img" aria-label="Strawberry" className="text-3xl mr-2 drop-shadow-sm">🍓</span>
-                            +50
+                            {displayFresas}
+                        </div>
+                    </div>
+
+                    {/* Palabras correctas */}
+                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center shadow-sm border border-gray-100 flex-1 min-w-[140px]">
+                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                            Palabras Correctas ({correctCount})
+                        </p>
+                        <div className="text-green-500 font-extrabold text-lg md:text-xl">
+                            +{correctCount * 20} fresas
+                        </div>
+                    </div>
+
+                    {/* Palabras incorrectas */}
+                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center shadow-sm border border-gray-100 flex-1 min-w-[140px]">
+                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                            Palabras Incorrectas ({incorrectCount})
+                        </p>
+                        <div className="text-red-500 font-extrabold text-lg md:text-xl">
+                            -{incorrectCount * 10} fresas
                         </div>
                     </div>
                 </div>
 
                 {/* Unlocked Next Level Card */}
-                {unlockedModuleTitle && (
+                {unlockedModuleTitle && correctCount > 0 && (
                     <div className="w-full bg-white rounded-2xl p-6 shadow-sm border border-emerald-200 mb-12 text-center transform hover:scale-105 transition-transform">
                         <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
                             ¡Siguiente nivel desbloqueado!
@@ -95,13 +121,22 @@ export const LessonCompleted: React.FC = () => {
                 )}
 
                 {/* Continue Action */}
-                <button
-                    onClick={() => navigate('/')}
-                    className="w-full md:w-auto min-w-[280px] bg-[#166534] hover:bg-green-700 active:bg-green-800 text-white font-extrabold py-4 px-8 rounded-xl shadow-[0_5px_0_0_#14532d] active:shadow-none active:translate-y-1 transition-all flex justify-center items-center text-lg tracking-wide uppercase"
-                >
-                    Continuar
-                    <ArrowForwardIcon className="ml-2" />
-                </button>
+                {correctCount === 0 ? (
+                    <button
+                        onClick={() => location.state?.moduleId ? navigate(`/lesson/${location.state.moduleId}`) : navigate('/')}
+                        className="w-full md:w-auto min-w-[280px] bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white font-extrabold py-4 px-8 rounded-xl shadow-[0_5px_0_0_#9a3412] active:shadow-none active:translate-y-1 transition-all flex justify-center items-center text-lg tracking-wide uppercase"
+                    >
+                        Volver a intentar
+                    </button>
+                ) : (
+                    <button
+                        onClick={() => navigate('/')}
+                        className="w-full md:w-auto min-w-[280px] bg-[#166534] hover:bg-green-700 active:bg-green-800 text-white font-extrabold py-4 px-8 rounded-xl shadow-[0_5px_0_0_#14532d] active:shadow-none active:translate-y-1 transition-all flex justify-center items-center text-lg tracking-wide uppercase"
+                    >
+                        Continuar
+                        <ArrowForwardIcon className="ml-2" />
+                    </button>
+                )}
             </div>
 
             {/* Footer Copyright */}

@@ -15,7 +15,7 @@ export const LessonFooter: React.FC<LessonFooterProps> = ({ onSkip, onCheck, isC
     const isIdle = status === 'idle';
 
     // Dynamic classes
-    const wrapperBg = isCorrect ? 'bg-green-100 border-green-200' : isIncorrect ? 'bg-red-100 border-red-200' : 'bg-white border-gray-200';
+    const wrapperBg = isCorrect ? 'bg-green-100 border-green-200' : isIncorrect ? 'bg-red-100 border-red-200' : 'bg-black/80 border-white/10 backdrop-blur-md';
 
     const btnText = isCorrect ? 'Continuar' : isIncorrect ? 'Entendido' : 'Comprobar';
     const btnColor = isCorrect
@@ -52,7 +52,7 @@ export const LessonFooter: React.FC<LessonFooterProps> = ({ onSkip, onCheck, isC
                 {isIdle && (
                     <button
                         onClick={onSkip}
-                        className="text-gray-400 font-bold hover:text-gray-600 transition-colors uppercase tracking-widest text-sm"
+                        className="text-white/60 font-bold hover:text-white transition-colors uppercase tracking-widest text-sm"
                     >
                         Saltar
                     </button>
@@ -65,7 +65,7 @@ export const LessonFooter: React.FC<LessonFooterProps> = ({ onSkip, onCheck, isC
                     className={`
                         font-extrabold py-3 px-10 rounded-2xl uppercase tracking-wide text-lg transition-all ml-auto
                         ${(isCheckDisabled && isIdle)
-                            ? 'bg-gray-200 text-gray-400 cursor-not-allowed shadow-none'
+                            ? 'bg-white/10 text-white/40 cursor-not-allowed shadow-none'
                             : btnColor
                         }
                     `}

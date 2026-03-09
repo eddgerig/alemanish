@@ -28,8 +28,8 @@ export const OptionCard: React.FC<OptionCardProps> = ({ id, icon, title, subtitl
             onClick={handleClick}
             className={`
                 flex flex-col items-center justify-center p-6 rounded-2xl w-full max-w-[200px] h-[220px]
-                transition-all duration-200 transform hover:-translate-y-1 bg-white
-                ${isSelected ? 'border-2 border-orange-400 shadow-[0_4px_0_0_#fb923c] !bg-orange-50/30' : 'border-2 border-transparent shadow-[0_4px_0_0_#e5e7eb]'}
+                transition-all duration-200 transform hover:-translate-y-1 bg-black/40 backdrop-blur-md
+                ${isSelected ? 'border-2 border-orange-400 shadow-[0_4px_0_0_#fb923c] !bg-orange-500/20' : 'border-2 border-white/20 shadow-[0_4px_0_0_rgba(255,255,255,0.2)]'}
             `}
         >
             {imageUrl ? (
@@ -41,8 +41,8 @@ export const OptionCard: React.FC<OptionCardProps> = ({ id, icon, title, subtitl
                     {icon}
                 </div>
             ) : null}
-            <h3 className="text-xl font-bold text-slate-800 mb-1">{title}</h3>
-            {subtitle && <p className="text-sm font-semibold text-slate-500 italic">{subtitle}</p>}
+            <h3 className="text-xl font-bold text-white mb-1">{title}</h3>
+            {subtitle && <p className="text-sm font-semibold text-white/70 italic">{subtitle}</p>}
 
         </button>
     );

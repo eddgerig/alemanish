@@ -39,18 +39,18 @@ export const Dashboard: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-[#E5E9F0] flex flex-col items-center pb-24 relative overflow-x-hidden">
+        <div className="min-h-screen bg-black flex flex-col items-center pb-24 relative overflow-x-hidden">
 
             {/* Background Image Layer */}
-            <div className="fixed inset-0 z-0 pointer-events-none">
+            <div className="fixed inset-0 z-0 pointer-events-none bg-black overflow-hidden">
                 <img
                     src="/ColoniaTovar_Background.jpg"
                     alt="Background Colonia Tovar"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover opacity-70 scale-105"
                 />
             </div>
             {/* Overlay Gradient to ensure text readability */}
-            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-white/0 to-[#E5E9F0]/60"></div>
+            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-black/0 via-black/40 to-black/95"></div>
 
             {/* Header component */}
             <div className="w-full z-50 fixed top-0 left-0">
@@ -89,7 +89,7 @@ export const Dashboard: React.FC = () => {
 
                 {/* Section Diamond Node at the bottom */}
                 <Section
-                    title="SECCIÓN 1: EL BOSQUE"
+                    title="SECCIÓN 1: Colonia Tovar"
                     subtitle="Completa todos los niveles para avanzar"
                     icon={<EmojiEventsIcon fontSize="large" className="text-orange-400 drop-shadow-md" />}
                 />

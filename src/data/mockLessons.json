@@ -1,5 +1,266 @@
 [
     {
+        "moduleId": "saludos",
+        "title": "Saludos y Cortesía",
+        "lessons": [
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Hasta luego\"",
+                "questionSuffix": "?",
+                "correctOptionId": "otie",
+                "options": [
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "imageUrl": "/otie.jpg",
+                        "audioUrl": "/audios/otie.mp3"
+                    },
+                    {
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "imageUrl": "/cuatamorka.jpg",
+                        "audioUrl": "/audios/cuata_morka.mp3"
+                    },
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "imageUrl": "/kjumacuat.jpg",
+                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Buenos Dias\"",
+                "questionSuffix": "?",
+                "correctOptionId": "cuata_morka",
+                "options": [
+                    {
+                        "id": "cuata_zowa",
+                        "title": "Cuata Zowa",
+                        "imageUrl": "/cuatazowa.jpg",
+                        "audioUrl": "/audios/cuata_zowa.mp3"
+                    },
+                    {
+                        "id": "cuata_nojt",
+                        "title": "Cuata Nojt",
+                        "imageUrl": "/cuatanojt.jpg",
+                        "audioUrl": "/audios/cuata_nojt.mp3"
+                    },
+                    {
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "imageUrl": "/cuatamorka.jpg",
+                        "audioUrl": "/audios/cuata_morka.mp3"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "/cuatanojt.jpg",
+                "audioUrl": "/audios/buenas_noches.mp3",
+                "targetWord": "CUATA NOJT",
+                "visibleCharacters": 6
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Buenas Tardes\"",
+                "questionSuffix": "?",
+                "correctOptionId": "cuata_zowa",
+                "options": [
+                    {
+                        "id": "cuata_zowa",
+                        "title": "Cuata Zowa",
+                        "imageUrl": "/cuatazowa.jpg",
+                        "audioUrl": "/audios/cuata_zowa.mp3"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "/tonkshen.jpg",
+                        "audioUrl": "/audios/tonk_schen.mp3"
+                    },
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "imageUrl": "/otie.jpg",
+                        "audioUrl": "/audios/otie.mp3"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen correcta para 'Bienvenido'",
+                "audioUrl": "/audios/bienvenido.mp3",
+                "phoneticText": "'Kjuma Cuat'",
+                "correctOptionId": "kjuma_cuat",
+                "options": [
+                    {
+                        "id": "cuata_nojt",
+                        "title": "Cuata Nojt",
+                        "imageUrl": "/cuatanojt.jpg"
+                    },
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "imageUrl": "/kjumacuat.jpg"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "/tonkshen.jpg"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Muchas Gracias\"",
+                "questionSuffix": "?",
+                "correctOptionId": "tonk_schen",
+                "options": [
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "/tonkshen.jpg",
+                        "audioUrl": "/audios/tonk_schen.mp3"
+                    },
+                    {
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "imageUrl": "/cuatamorka.jpg",
+                        "audioUrl": "/audios/cuata_morka.mp3"
+                    },
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "imageUrl": "/otie.jpg",
+                        "audioUrl": "/audios/otie.mp3"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "/cuatamorka.jpg",
+                "audioUrl": "/audios/cuata_morka.mp3",
+                "targetWord": "CUATA MORKA",
+                "visibleCharacters": 6
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Buenas Noches\"",
+                "questionSuffix": "?",
+                "correctOptionId": "cuata_nojt",
+                "options": [
+                    {
+                        "id": "cuata_nojt",
+                        "title": "Cuata Nojt",
+                        "imageUrl": "/cuatanojt.jpg",
+                        "audioUrl": "/audios/cuata_nojt.mp3"
+                    },
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "imageUrl": "/otie.jpg",
+                        "audioUrl": "/audios/otie.mp3"
+                    },
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "imageUrl": "/kjumacuat.jpg",
+                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                    }
+                ]
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen correcta para 'Buenas Tardes'",
+                "audioUrl": "/audios/cuata_zowa.mp3",
+                "phoneticText": "",
+                "correctOptionId": "cuata_zowa",
+                "options": [
+                    {
+                        "id": "cuata_zowa",
+                        "title": "Cuata Zowa",
+                        "imageUrl": "/cuatazowa.jpg"
+                    },
+                    {
+                        "id": "cuata_morka",
+                        "title": "Cuata Morka",
+                        "imageUrl": "/cuatamorka.jpg"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "/tonkshen.jpg"
+                    }
+                ]
+            },
+            {
+                "type": "translation",
+                "questionPrefix": "¿Cómo se dice ",
+                "highlightedWord": "\"Bienvenido\"",
+                "questionSuffix": "?",
+                "correctOptionId": "kjuma_cuat",
+                "options": [
+                    {
+                        "id": "cuata_nojt",
+                        "title": "Cuata Nojt",
+                        "imageUrl": "/cuatanojt.jpg",
+                        "audioUrl": "/audios/cuata_nojt.mp3"
+                    },
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "imageUrl": "/kjumacuat.jpg",
+                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "/tonkshen.jpg",
+                        "audioUrl": "/audios/tonk_schen.mp3"
+                    }
+                ]
+            },
+            {
+                "type": "completeWord",
+                "imageUrl": "/otie.jpg",
+                "audioUrl": "/audios/otie.mp3",
+                "targetWord": "OTIE",
+                "visibleCharacters": 2
+            },
+            {
+                "type": "audioImage",
+                "instruction": "Escucha y selecciona la imagen correcta para 'Muchas Gracias'",
+                "audioUrl": "/audios/tonk_schen.mp3",
+                "phoneticText": "",
+                "correctOptionId": "tonk_schen",
+                "options": [
+                    {
+                        "id": "kjuma_cuat",
+                        "title": "Kjuma Cuat",
+                        "imageUrl": "/kjumacuat.jpg"
+                    },
+                    {
+                        "id": "otie",
+                        "title": "Otie",
+                        "imageUrl": "/otie.jpg"
+                    },
+                    {
+                        "id": "tonk_schen",
+                        "title": "Tonk Schen",
+                        "imageUrl": "/tonkshen.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "moduleId": "familia",
         "title": "La Familia",
         "lessons": [
@@ -50,154 +311,67 @@
                     {
                         "id": "maitili",
                         "title": "Maitili",
-                        "imageUrl": "https://api.dicebear.com/7.x/notionists/svg?seed=Maitili"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "moduleId": "saludos",
-        "title": "Saludos y Cortesía",
-        "lessons": [
-            {
-                "type": "translation",
-                "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Hasta luego\"",
-                "questionSuffix": "?",
-                "correctOptionId": "otie",
-                "options": [
-                    {
-                        "id": "otie",
-                        "title": "Otie",
-                        "iconName": "hand",
-                        "audioUrl": "/audios/otie.mp3"
-                    },
-                    {
-                        "id": "cuata_morka",
-                        "title": "Cuata Morka",
-                        "iconName": "sun",
-                        "audioUrl": "/audios/cuata_morka.mp3"
-                    },
-                    {
-                        "id": "kjuma_cuat",
-                        "title": "Kjuma Cuat",
-                        "iconName": "heart",
-                        "audioUrl": "/audios/kjuma_cuat.mp3"
+                        "imageUrl": "/maitili.jpg"
                     }
                 ]
             },
             {
                 "type": "translation",
                 "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Buenos Dias\"",
+                "highlightedWord": "\"Niño\"",
                 "questionSuffix": "?",
-                "correctOptionId": "cuata_morka",
+                "correctOptionId": "kingstag",
                 "options": [
                     {
-                        "id": "cuata_zowa",
-                        "title": "Cuata Zowa",
-                        "iconName": "sun",
-                        "audioUrl": "/audios/cuata_zowa.mp3"
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "imageUrl": "/maitili.jpg",
+                        "audioUrl": "/audios/maitili.mp3"
                     },
                     {
-                        "id": "cuata_nojt",
-                        "title": "Cuata Nojt",
-                        "iconName": "moon",
-                        "audioUrl": "/audios/cuata_nojt.mp3"
+                        "id": "kingstag",
+                        "title": "Kingstag",
+                        "imageUrl": "/kingstag.jpg",
+                        "audioUrl": "/audios/kingstag.mp3"
                     },
                     {
-                        "id": "cuata_morka",
-                        "title": "Cuata Morka",
-                        "iconName": "star",
-                        "audioUrl": "/audios/cuata_morka.mp3"
-                    }
-                ]
-            },
-            {
-                "type": "completeWord",
-                "imageUrl": "https://images.unsplash.com/photo-1517816743773-6e0fd5ce6a64?auto=format&fit=crop&q=80&w=500",
-                "audioUrl": "/audios/buenas_noches.mp3",
-                "targetWord": "CUATA NOJT",
-                "visibleCharacters": 4
-            },
-            {
-                "type": "translation",
-                "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Buenas Tardes\"",
-                "questionSuffix": "?",
-                "correctOptionId": "cuata_zowa",
-                "options": [
-                    {
-                        "id": "cuata_zowa",
-                        "title": "Cuata Zowa",
-                        "iconName": "sun",
-                        "audioUrl": "/audios/cuata_zowa.mp3"
-                    },
-                    {
-                        "id": "tonk_schen",
-                        "title": "Tonk Schen",
-                        "iconName": "heart",
-                        "audioUrl": "/audios/tonk_schen.mp3"
-                    },
-                    {
-                        "id": "otie",
-                        "title": "Otie",
-                        "iconName": "hand",
-                        "audioUrl": "/audios/otie.mp3"
+                        "id": "foter",
+                        "title": "Foter",
+                        "imageUrl": "/foter.jpg",
+                        "audioUrl": "/audios/foter.m4a"
                     }
                 ]
             },
             {
                 "type": "audioImage",
-                "instruction": "Escucha y selecciona la imagen correcta para 'Bienvenido'",
-                "audioUrl": "/audios/bienvenido.mp3",
-                "phoneticText": "'Kjuma Cuat'",
-                "correctOptionId": "kjuma_cuat",
+                "instruction": "Escucha y selecciona la imagen correcta para 'Niña'",
+                "audioUrl": "/audios/maitili.mp3",
+                "phoneticText": "",
+                "correctOptionId": "maitili",
                 "options": [
                     {
-                        "id": "cuata_nojt",
-                        "title": "Cuata Nojt",
-                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=moon"
+                        "id": "kingstag",
+                        "title": "Kingstag",
+                        "imageUrl": "/kingstag.jpg"
                     },
                     {
-                        "id": "kjuma_cuat",
-                        "title": "Kjuma Cuat",
-                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=door"
+                        "id": "maitili",
+                        "title": "Maitili",
+                        "imageUrl": "/maitili.jpg"
                     },
                     {
-                        "id": "tonk_schen",
-                        "title": "Tonk Schen",
-                        "imageUrl": "https://api.dicebear.com/7.x/icons/svg?seed=heart"
+                        "id": "muater",
+                        "title": "Muater",
+                        "imageUrl": "/muater.jpg"
                     }
                 ]
             },
             {
-                "type": "translation",
-                "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Muchas Gracias\"",
-                "questionSuffix": "?",
-                "correctOptionId": "tonk_schen",
-                "options": [
-                    {
-                        "id": "tonk_schen",
-                        "title": "Tonk Schen",
-                        "iconName": "heart",
-                        "audioUrl": "/audios/tonk_schen.mp3"
-                    },
-                    {
-                        "id": "cuata_morka",
-                        "title": "Cuata Morka",
-                        "iconName": "sun",
-                        "audioUrl": "/audios/cuata_morka.mp3"
-                    },
-                    {
-                        "id": "otie",
-                        "title": "Otie",
-                        "iconName": "hand",
-                        "audioUrl": "/audios/otie.mp3"
-                    }
-                ]
+                "type": "completeWord",
+                "imageUrl": "/kingstag.jpg",
+                "audioUrl": "/audios/kingstag.mp3",
+                "targetWord": "KINGSTAG",
+                "visibleCharacters": 4
             }
         ]
     },
@@ -215,19 +389,19 @@
                     {
                         "id": "ris",
                         "title": "Ris",
-                        "iconName": "star",
+                        "imageUrl": "/ris.jpg",
                         "audioUrl": "/audios/ris.mp3"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "iconName": "heart",
+                        "imageUrl": "/pona.jpg",
                         "audioUrl": "/audios/pona.mp3"
                     },
                     {
                         "id": "brot",
                         "title": "Brot",
-                        "iconName": "sun",
+                        "imageUrl": "/brot.jpg",
                         "audioUrl": "/audios/brot.mp3"
                     }
                 ]
@@ -242,33 +416,33 @@
                     {
                         "id": "brot",
                         "title": "Brot",
-                        "iconName": "star",
+                        "imageUrl": "/brot.jpg",
                         "audioUrl": "/audios/brot.mp3"
                     },
                     {
                         "id": "ris",
                         "title": "Ris",
-                        "iconName": "sun",
+                        "imageUrl": "/ris.jpg",
                         "audioUrl": "/audios/ris.mp3"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "iconName": "heart",
+                        "imageUrl": "/pona.jpg",
                         "audioUrl": "/audios/pona.mp3"
                     }
                 ]
             },
             {
                 "type": "completeWord",
-                "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=500",
+                "imageUrl": "/brot.jpg",
                 "audioUrl": "/audios/pan.mp3",
                 "targetWord": "BROT",
                 "visibleCharacters": 1
             },
             {
                 "type": "audioImage",
-                "instruction": "Escucha y selecciona la fruta correcta ('Fresa')",
+                "instruction": "Escucha y selecciona la fruta correcta",
                 "audioUrl": "/audios/fresa.mp3",
                 "phoneticText": "'Arpala'",
                 "correctOptionId": "arpala",
@@ -276,17 +450,17 @@
                     {
                         "id": "arpala",
                         "title": "Arpala",
-                        "imageUrl": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&q=80&w=500"
+                        "imageUrl": "/arpala.jpg"
                     },
                     {
                         "id": "fisich",
                         "title": "Fisich",
-                        "imageUrl": "https://images.unsplash.com/photo-1533709475520-a0745bba78bf?auto=format&fit=crop&q=80&w=500"
+                        "imageUrl": "/fisich.jpg"
                     },
                     {
                         "id": "crumpera",
                         "title": "Crumpera",
-                        "imageUrl": "https://images.unsplash.com/photo-1615486171448-4fbab9839f84?auto=format&fit=crop&q=80&w=500"
+                        "imageUrl": "/crumpera.jpg"
                     }
                 ]
             },
@@ -300,19 +474,19 @@
                     {
                         "id": "fisich",
                         "title": "Fisich",
-                        "iconName": "sun",
+                        "imageUrl": "/fisich.jpg",
                         "audioUrl": "/audios/fisich.mp3"
                     },
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "iconName": "star",
+                        "imageUrl": "/compira.jpg",
                         "audioUrl": "/audios/compira.mp3"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "iconName": "heart",
+                        "imageUrl": "/monca.jpg",
                         "audioUrl": "/audios/monca.mp3"
                     }
                 ]
@@ -327,19 +501,19 @@
                     {
                         "id": "arpala",
                         "title": "Arpala",
-                        "iconName": "heart",
+                        "imageUrl": "/arpala.jpg",
                         "audioUrl": "/audios/arpala.mp3"
                     },
                     {
                         "id": "crumpera",
                         "title": "Crumpera",
-                        "iconName": "star",
+                        "imageUrl": "/crumpera.jpg",
                         "audioUrl": "/audios/crumpera.mp3"
                     },
                     {
                         "id": "orosha",
                         "title": "Orosha",
-                        "iconName": "sun",
+                        "imageUrl": "/orosha.jpg",
                         "audioUrl": "/audios/orosha.mp3"
                     }
                 ]
@@ -354,26 +528,23 @@
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "iconName": "star",
                         "audioUrl": "/audios/compira.mp3"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "iconName": "sun",
                         "audioUrl": "/audios/jareplit.mp3"
                     },
                     {
                         "id": "fiica",
                         "title": "Fiica",
-                        "iconName": "heart",
                         "audioUrl": "/audios/fiica.mp3"
                     }
                 ]
             },
             {
                 "type": "audioImage",
-                "instruction": "Escucha y selecciona la fruta correcta ('Naranja')",
+                "instruction": "Escucha y selecciona la fruta correcta",
                 "audioUrl": "/audios/naranja.mp3",
                 "phoneticText": "'Orosha'",
                 "correctOptionId": "orosha",
@@ -381,17 +552,17 @@
                     {
                         "id": "orosha",
                         "title": "Orosha",
-                        "imageUrl": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&q=80&w=500"
+                        "imageUrl": "/orosha.jpg"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "imageUrl": "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&q=80&w=500"
+                        "imageUrl": "/monca.jpg"
                     },
                     {
-                        "id": "fluima",
-                        "title": "Fluima",
-                        "imageUrl": "https://images.unsplash.com/photo-1596733430284-f7437275e533?auto=format&fit=crop&q=80&w=500"
+                        "id": "crumpera",
+                        "title": "Crumpera",
+                        "imageUrl": "/crumpera.jpg"
                     }
                 ]
             },
@@ -405,28 +576,25 @@
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "iconName": "sun",
                         "audioUrl": "/audios/monca.mp3"
                     },
                     {
                         "id": "eplif",
                         "title": "Eplif",
-                        "iconName": "star",
                         "audioUrl": "/audios/eplif.mp3"
                     },
                     {
                         "id": "jareplit",
                         "title": "Jareplit",
-                        "iconName": "heart",
                         "audioUrl": "/audios/jareplit.mp3"
                     }
                 ]
             },
             {
                 "type": "completeWord",
-                "imageUrl": "https://images.unsplash.com/photo-1596591077717-38e55e424268?auto=format&fit=crop&q=80&w=500",
-                "audioUrl": "/audios/uchuva.mp3",
-                "targetWord": "FLUIMA",
+                "imageUrl": "/arpala.jpg",
+                "audioUrl": "/audios/arpala.mp3",
+                "targetWord": "Arpala",
                 "visibleCharacters": 2
             },
             {
@@ -439,19 +607,19 @@
                     {
                         "id": "fiica",
                         "title": "Fiica",
-                        "iconName": "star",
+                        "imageUrl": "/fiica.jpg",
                         "audioUrl": "/audios/fiica.mp3"
                     },
                     {
                         "id": "compira",
                         "title": "Compira",
-                        "iconName": "sun",
+                        "imageUrl": "/compira.jpg",
                         "audioUrl": "/audios/compira.mp3"
                     },
                     {
                         "id": "arpala",
                         "title": "Arpala",
-                        "iconName": "heart",
+                        "imageUrl": "/arpala.jpg",
                         "audioUrl": "/audios/arpala.mp3"
                     }
                 ]
@@ -466,19 +634,19 @@
                     {
                         "id": "eplif",
                         "title": "Eplif",
-                        "iconName": "heart",
+                        "imageUrl": "/eplif.jpg",
                         "audioUrl": "/audios/eplif.mp3"
                     },
                     {
                         "id": "monca",
                         "title": "Monca",
-                        "iconName": "sun",
+                        "imageUrl": "/monca.jpg",
                         "audioUrl": "/audios/monca.mp3"
                     },
                     {
                         "id": "orosha",
                         "title": "Orosha",
-                        "iconName": "star",
+                        "imageUrl": "/orosha.jpg",
                         "audioUrl": "/audios/orosha.mp3"
                     }
                 ]
@@ -486,26 +654,23 @@
             {
                 "type": "translation",
                 "questionPrefix": "¿Cómo se dice ",
-                "highlightedWord": "\"Papa\"",
+                "highlightedWord": "\"Durazno\"",
                 "questionSuffix": "?",
-                "correctOptionId": "jareplit",
+                "correctOptionId": "Fisich",
                 "options": [
                     {
-                        "id": "ris",
-                        "title": "Ris",
-                        "iconName": "sun",
-                        "audioUrl": "/audios/ris.mp3"
+                        "id": "Fisich",
+                        "title": "Fisich",
+                        "audioUrl": "/audios/Fisich.mp3"
                     },
                     {
-                        "id": "jareplit",
-                        "title": "Jareplit",
-                        "iconName": "star",
-                        "audioUrl": "/audios/jareplit.mp3"
+                        "id": "arpala",
+                        "title": "Arpala",
+                        "audioUrl": "/audios/arpala.mp3"
                     },
                     {
                         "id": "pona",
                         "title": "Pona",
-                        "iconName": "heart",
                         "audioUrl": "/audios/pona.mp3"
                     }
                 ]

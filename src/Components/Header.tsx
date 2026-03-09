@@ -1,7 +1,10 @@
 import React from 'react';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import { useUser } from '../context/UserContext';
 
 export const Header: React.FC = () => {
+    const { fresas } = useUser();
+
     return (
         <header className="sticky top-0 z-50 w-full bg-transparent flex items-center justify-between px-6 md:px-12 py-3">
             {/* Left side: Logo */}
@@ -9,15 +12,15 @@ export const Header: React.FC = () => {
                 <div className="w-10 h-7 rounded-sm border border-gray-200 flex items-center justify-center overflow-hidden shadow-sm">
                     <img src="/bandera.svg" alt="Alemanish Flag" className="w-full h-full object-cover" />
                 </div>
-                <h1 className="text-xl font-extrabold text-gray-800 tracking-tight">Alemanish</h1>
+                <h1 className="text-xl font-extrabold text-white tracking-tight">Alemanish</h1>
             </div>
 
             {/* Right side: Stats and Avatar */}
             <div className="flex items-center gap-4">
                 {/* Strawberry Badge */}
-                <div className="flex items-center bg-red-100 rounded-full px-3 py-1 text-red-600 font-bold border-2 border-transparent hover:bg-red-200 hover:border-red-300 transition-colors cursor-pointer">
+                <div className="flex items-center bg-red-100 rounded-full px-3 py-1 text-red-600 font-bold border-2 border-transparent hover:bg-red-200 hover:border-red-300 transition-colors cursor-pointer shadow-sm">
                     <span role="img" aria-label="Strawberry" className="text-lg mr-1 drop-shadow-sm">🍓</span>
-                    <span>150 Fresas</span>
+                    <span>{fresas} Fresas</span>
                 </div>
 
                 {/* Level Badge */}
