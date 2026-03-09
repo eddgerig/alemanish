@@ -36,7 +36,18 @@ export const LessonCompleted: React.FC = () => {
     }, []);
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] flex flex-col font-sans relative overflow-hidden">
+        <div className="min-h-screen bg-black flex flex-col font-sans relative overflow-x-hidden">
+            {/* Background Image Layer */}
+            <div className="fixed inset-0 z-0 pointer-events-none bg-black overflow-hidden">
+                <img
+                    src="/ColoniaTovar_Background.jpg"
+                    alt="Background Colonia Tovar"
+                    className="w-full h-full object-cover opacity-70 blur-sm scale-105"
+                />
+            </div>
+            {/* Overlay Gradient to ensure text readability */}
+            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-black/20 via-black/40 to-black/95"></div>
+
             <Confetti
                 width={dimensions.width}
                 height={dimensions.height}
@@ -67,42 +78,42 @@ export const LessonCompleted: React.FC = () => {
                 </div>
 
                 {/* Title */}
-                <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 mb-3 text-center">
+                <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 text-center drop-shadow-sm">
                     ¡Nivel Completado!
                 </h1>
-                <p className="text-slate-500 font-semibold mb-10 text-center">
+                <p className="text-white/70 font-semibold mb-10 text-center">
                     Has alcanzado un nuevo hito en tu aprendizaje de Alemán Coloniero.
                 </p>
 
                 {/* Stats Grid */}
                 <div className="flex flex-col md:flex-row justify-center w-full gap-4 mb-10 text-center">
                     {/* Fresas Totales */}
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center shadow-sm border border-gray-100 flex-1 min-w-[140px]">
-                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                    <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 flex flex-col items-center justify-center shadow-[0_4px_0_0_rgba(255,255,255,0.1)] border border-white/20 flex-1 min-w-[140px]">
+                        <p className="text-[10px] md:text-xs font-bold text-white/70 tracking-widest uppercase mb-2">
                             Fresas Totales
                         </p>
-                        <div className={`flex items-center font-extrabold text-2xl md:text-3xl ${totalFresas > 0 ? 'text-green-500' : 'text-slate-500'}`}>
+                        <div className={`flex items-center font-extrabold text-2xl md:text-3xl ${totalFresas > 0 ? 'text-green-400' : 'text-white/50'}`}>
                             <span role="img" aria-label="Strawberry" className="text-3xl mr-2 drop-shadow-sm">🍓</span>
                             {displayFresas}
                         </div>
                     </div>
 
                     {/* Palabras correctas */}
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center shadow-sm border border-gray-100 flex-1 min-w-[140px]">
-                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                    <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 flex flex-col items-center justify-center shadow-[0_4px_0_0_rgba(255,255,255,0.1)] border border-white/20 flex-1 min-w-[140px]">
+                        <p className="text-[10px] md:text-xs font-bold text-white/70 tracking-widest uppercase mb-2">
                             Palabras Correctas ({correctCount})
                         </p>
-                        <div className="text-green-500 font-extrabold text-lg md:text-xl">
+                        <div className="text-green-400 font-extrabold text-lg md:text-xl">
                             +{correctCount * 20} fresas
                         </div>
                     </div>
 
                     {/* Palabras incorrectas */}
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center shadow-sm border border-gray-100 flex-1 min-w-[140px]">
-                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                    <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 flex flex-col items-center justify-center shadow-[0_4px_0_0_rgba(255,255,255,0.1)] border border-white/20 flex-1 min-w-[140px]">
+                        <p className="text-[10px] md:text-xs font-bold text-white/70 tracking-widest uppercase mb-2">
                             Palabras Incorrectas ({incorrectCount})
                         </p>
-                        <div className="text-red-500 font-extrabold text-lg md:text-xl">
+                        <div className="text-red-400 font-extrabold text-lg md:text-xl">
                             -{incorrectCount * 10} fresas
                         </div>
                     </div>
@@ -110,11 +121,11 @@ export const LessonCompleted: React.FC = () => {
 
                 {/* Unlocked Next Level Card */}
                 {unlockedModuleTitle && correctCount > 0 && (
-                    <div className="w-full bg-white rounded-2xl p-6 shadow-sm border border-emerald-200 mb-12 text-center transform hover:scale-105 transition-transform">
-                        <p className="text-[10px] md:text-xs font-bold text-slate-400 tracking-widest uppercase mb-2">
+                    <div className="w-full bg-black/40 backdrop-blur-md rounded-2xl p-6 shadow-[0_4px_0_0_rgba(16,185,129,0.3)] border border-emerald-500/50 mb-12 text-center transform hover:scale-105 transition-transform">
+                        <p className="text-[10px] md:text-xs font-bold text-white/70 tracking-widest uppercase mb-2">
                             ¡Siguiente nivel desbloqueado!
                         </p>
-                        <h3 className="text-xl md:text-2xl font-extrabold text-emerald-600">
+                        <h3 className="text-xl md:text-2xl font-extrabold text-emerald-400 drop-shadow-sm">
                             {unlockedModuleTitle}
                         </h3>
                     </div>
@@ -140,7 +151,7 @@ export const LessonCompleted: React.FC = () => {
             </div>
 
             {/* Footer Copyright */}
-            <div className="w-full text-center p-6 text-[10px] text-slate-400 font-medium">
+            <div className="w-full text-center p-6 text-[10px] text-white/40 font-medium z-10 relative">
                 © 2024 Alemanish Language Learning. Todos los derechos reservados.
             </div>
         </div>
